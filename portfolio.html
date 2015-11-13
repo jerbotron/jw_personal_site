@@ -1,0 +1,1035 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Portfolio</title>
+
+    <!-- Style Links -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link href="assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/scrolling-nav.css" rel="stylesheet">
+
+    <style>
+    .jumbotron {
+      background: url("assets/images/jumbotron_ironman.jpg") 75% -300px;
+      background-color: white;
+      /*position: fixed;*/
+      width: 100%;
+      padding-top: 150px;
+      padding-bottom: 150px;
+      font-family: "gaspar", Arial, serif;
+      color: white;
+    }
+    .jumbotron h1,
+    .jumbotron .h1 {
+      padding-top: 50px;
+      font-size: 100px;
+      font-weight: bold;
+    }
+    .btn-primary{
+      background-color: #B9A244;
+      color: white;
+    }
+    .nav-header{
+      padding-left: 15px;
+      font-size: 12px;
+    }
+    .nav-dropdown{
+      font-size: 12px;
+    }
+    .dropdown-menu .divider{
+      background-color: gray;
+    }
+    .thumbnail {
+      position:relative;
+      overflow:hidden;
+    }
+    .caption {
+      position:absolute;
+      top:0;
+      right:0;
+      background:rgba(90, 90, 90, 0.75);
+      width:100%;
+      height:100%;
+      padding:2%;
+      display: none;
+      text-align: left;
+      color:#fff !important;
+      z-index:2;
+    }
+    .carousel{
+      border-style: groove;
+      border-width: thick;
+      border-color: white;
+    }
+    .progress{
+      margin-bottom: 0px;
+    }
+    </style>
+  </head>
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          </button>
+          <a class="navbar-brand page-scroll" href="index.html"><b>JW</b></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-hover="dropdown" href="index.html">Home<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="nav-dropdown"><a class="page-scroll" href="index.html#about">About</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="index.html#contact">Contact</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-hover="dropdown" href="education.html">Education<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="nav-dropdown"><a class="page-scroll" href="education.html#grades">Grades</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="education.html#awards">Awards</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-hover="dropdown" href="experience.html">Experience<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="nav-dropdown"><a class="page-scroll" href="experience.html#lumotune">Hardware Designer (Lumotune)</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="experience.html#ims">Software Engineer (IMS)</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="experience.html#zspace">Display Engineer (zSpace)</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="experience.html#ignis">Engineering Intern (IGNIS Innovation)</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="experience.html#pck">Patent Services IT Assistant (PCK Inc)</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-hover="dropdown" href="portfolio.html">Portfolio<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="nav-dropdown"><a class="page-scroll" href="#page-top">Top</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="#projects">Personal Projects</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="#skills">Skills Summary</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-hover="dropdown">Contact<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="nav-dropdown"><a class="page-scroll" href="index.html#contact"><i class="fa fa-edit"></i> Leave a Message</a></li>
+                <li class="nav-dropdown"><a href="mailto:jy7wang@uwaterloo.ca" target="new"><i class="fa fa-envelope"></i> jy7wang@uwaterloo.ca</a></li>
+                <li class="divider"></li>
+                <li class="nav-header"><b>Social Media</b></li>
+                <li class="nav-dropdown"><a href="https://www.facebook.com/jeremy.wang.3990" target="new"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+                <li class="nav-dropdown"><a href="https://ca.linkedin.com/pub/jeremy-wang/38/b95/153" target="new"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
+                <li class="nav-dropdown"><a href="https://twitter.com/thejerbotron" target="new"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+                <li class="nav-dropdown"><a href="http://instagram.com/jereremy22" target="new"><i class="fa fa-instagram"></i> Instagram</a></li>
+              </ul>
+            </li>
+            <form class="navbar-form navbar-left" role="navigation">
+              <a class="btn btn-info btn-sm" aria-label="Left Align" href="http://www.eng.uwaterloo.ca/~jy7wang/coop/resume.pdf" target="_blank">
+                <span class="glyphicon glyphicon-print" aria-hidden="true"></span> View Printable Resume 
+              </a>
+            </form>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+
+    <!-- JUMBOTRON -->
+    <section id="intro">
+      <div class="jumbotron"> 
+        <div class="container"> 
+
+          <div class="col-md-12"> 
+            <h1>PORTFOLIO</h1>
+            <p>
+              <ul class="list-inline">
+                <li><a class="btn btn-primary btn-lg page-scroll" href="#projects">Personal Projects</a></li>
+                <li><a class="btn btn-primary btn-lg page-scroll" href="#skills">Skills Summary</a></li>
+              </ul>
+            </p> 
+          </div> 
+          <div class="col-md-8">
+            <p class="quote">
+              "To invent, you need a good imagination and a pile of junk."
+            </p>
+            <p class="author">
+              - Thomas A. Edison
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h1 style="margin-top:75px">
+          <center>Personal Projects</center>
+        </h1>
+
+        <hr class="style-three">
+
+        <div class="col-md-4">
+          <div class="thumbnail" style="height:340px;">
+            <div class="caption">
+              <h2>LED Word Clock</h2>
+              <p>Digital LED clock displaying time in words.</p>
+              <h3>
+                <span class="label label-success">Completed</span>
+                <a href="#wordclock" class="label label-danger page-scroll" rel="tooltip">Details</a>
+              </h3>
+            </div>
+            <img src="assets/images/wordclock/wordclock_icon.jpg">
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="thumbnail" style="height:340px;">
+            <div class="caption">
+             <h2>Sonar RGB LED Cube</h2>
+             <p>4x4x4 RGB LED Cube with built in sonar sensors to allow motion controls.</p>
+             <h3>
+              <span class="label label-success">Completed</span>
+              <a href="#sonarcube" class="label label-danger page-scroll" rel="tooltip">Details</a>
+            </h3>
+          </div>
+          <img src="assets/images/sonarcube/sonarcube_icon.jpg">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail" style="height:340px;">
+          <div class="caption">
+           <h2>Minimalist Arduino UNO</h2>
+           <p>Barebone Arduino UNO PCB created with the ATMEGA328P-PU chip.</p>
+           <h3>
+            <span class="label label-success">Completed</span>
+            <a href="#atmega" class="label label-danger page-scroll" rel="tooltip">Details</a>
+          </h3>
+        </div>
+        <img src="assets/images/atmega/atmega328_icon.jpg" width="77%">
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="thumbnail" style="height:340px;">
+        <div class="caption">
+         <h2>Old Wooden Bluetooth Music Player</h2>
+         <p>
+          A bluetooth music player made by using the speakers on an old wooden radio and a PAM8403 audio amplifier, both controlled through
+          the Raspberry Pi. An additional webcam is used to filter live video to provide gesture feedback controls. 
+        </p>
+        <h3>
+          <span class="label label-info">In Progress</span>
+          <a href="#musicplayer" class="label label-danger page-scroll" rel="tooltip">Details</a>
+        </h3>
+      </div>
+      <img src="assets/images/musicplayer/oldradio_icon.jpg" style="margin-top:35px">
+    </div>
+  </div>
+
+  <div class="col-md-4">
+      <div class="thumbnail" style="height:340px;">
+        <div class="caption">
+         <h2>SPOCK - <i>Smart Padlock</i></h2>
+         <p>
+          A padlock integrated with a biometric finger scan sensor from SparkFun and small servo motor allowing users to access the lock with a simple touch of their finger.
+        </p>
+        <h3>
+          <span class="label label-info">In Progress</span>
+          <a href="#spock" class="label label-danger page-scroll" rel="tooltip">Details</a>
+        </h3>
+      </div>
+      <img src="assets/images/spock/spock_icon.jpg" style="margin-top:100px">
+    </div>
+  </div>
+
+</div>
+</section>
+
+<section id="wordclock">
+  <div class="container">
+    <h1 style="margin-top:75px;">
+      <b>LED Word Clock</b>
+    </h1>
+    <span class="label label-success" style="font-size:medium">Completion time: 1 week</span>
+    <a href="#projects" class="label label-danger page-scroll" style="font-size:medium">
+      <b><i class="fa fa-hand-o-up"></i> Projects</b>
+    </a>
+    <hr class="style-three">
+    <div class="row">
+      <div class="col-md-6">
+        <font size="5">Description</font>
+        <p>
+          Sleek LED word clock made by driving individual LEDs using ULN2003AN drivers controlled by 74HC595N shift registers. Housed with an IKEA picture frame, the LED holder is constructed out of cardboard. The controller is an Arduino on breadboard made using the ATMEGA328P-PU chip. All circuits are hand soldered on protoboards. Push buttons and LCD mounted to the back are programmed to set the time.
+        </p>
+        <font size="5">Materials</font>
+        <ul>
+          <li>IKEA RIBBA 9x9" Picture Frame</li>
+          <li>ATMEGA328P-PU Bootloaded Microcontroller</li>
+          <li>98 x Diffused White LEDs + 98x500Ohm Resistors</li>
+          <li>4 x ULN2003AN Drivers</li>
+          <li>3 x 74HC595N Shift Registers</li>
+          <li>5V Power Supply or Power Circuit</li>
+          <li>LCD Display</li>
+          <li>2 x Push Buttons</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <font size="5">Gallery</font>
+        <div id="carousel-wordclock" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-wordclock" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-wordclock" data-slide-to="1"></li>
+            <li data-target="#carousel-wordclock" data-slide-to="2"></li>
+            <li data-target="#carousel-wordclock" data-slide-to="3"></li>
+            <li data-target="#carousel-wordclock" data-slide-to="4"></li>
+            <li data-target="#carousel-wordclock" data-slide-to="5"></li>
+            <li data-target="#carousel-wordclock" data-slide-to="6"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="assets/images/wordclock/pic0.jpg">
+              <div class="carousel-caption">
+                <h4>Final Product</h4>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/wordclock/pic1.jpg">
+              <div class="carousel-caption">
+                <h4>Letter mask transparency</h4>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/wordclock/pic2.jpg">
+              <div class="carousel-caption">
+                <h4>LED setup</h4>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/wordclock/pic3.jpg">
+              <div class="carousel-caption">
+                <h4>Display driver(right), controller(left)</h4>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/wordclock/pic4.jpg">
+              <div class="carousel-caption">
+                <h4>Display driver(right), controller(left)</h4>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/wordclock/pic5.jpg">
+              <div class="carousel-caption">
+                <h4>Software testing</h4>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/wordclock/pic6.jpg" style="width:409px;height:409px;display:block;margin-left:auto;margin-right:auto;">
+              <div class="carousel-caption">
+                <h4>Final Housing</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-wordclock" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-wordclock" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sonarcube">
+  <div class="container">
+    <h1 style="margin-top:100px">
+      <b>Sonar RGB LED Cube</b>
+    </h1>
+    <span class="label label-success" style="font-size:medium">Completion time: 3 week</span>
+    <a href="#projects" class="label label-danger page-scroll" style="font-size:medium">
+      <b><i class="fa fa-hand-o-up"></i> Projects</b>
+    </a>
+    <hr class="style-three">
+    <div class="row">
+      <div class="col-md-6">
+        <font size="5">Description</font>
+        <p>
+          4x4x4 RGB LED cube with built in sonar sensors to allow user motion control. The cube will operate in 2 modes controlled by the 3-pos toggle switch: <i>Animation</i> and <i>Sonar</i> mode. 
+        </p>
+        <p>
+          In Animation mode, the cube will cycle through pre-programmed animations as seen <a href="">here</a>. Additional animations are still being programmed.
+        </p>
+        <p>
+          Sonar mode will also be a reflex-based game mode where the user will place hand over the sonar sensors to begin. A random LED will turn on in the cube and another LED will start in a corner and run along the rows and columns towards the turned-on LED. The running LED will stop as soon as the user removes his/her hand from the sensors. The objective is to stop the running LED on top of the turned-on LED.
+        </p>
+      </p>
+      <font size="5">Materials</font>
+      <ul>
+        <li>65 x Diffused RGB LEDs</li>
+        <li>2 x Sonar Sensors</li>
+        <li>3 x TCL5940 LED Drivers</li>
+        <li>5 x P-Channel MOSFETS</li>
+        <li>ATMEGA328P-PU Bootloaded Microcontroller</li>
+        <li>5V Power Supply or Power Circuit</li>          
+        <li>3-Pos Toggle Switch</li>
+        <li>Protoboards, Resistors, Capacitors, Solder</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <font size="5">Gallery</font>
+      <div id="carousel-sonarcube" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-sonarcube" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-sonarcube" data-slide-to="1"></li>
+          <li data-target="#carousel-sonarcube" data-slide-to="2"></li>
+          <li data-target="#carousel-sonarcube" data-slide-to="3"></li>
+          <li data-target="#carousel-sonarcube" data-slide-to="4"></li>
+          <li data-target="#carousel-sonarcube" data-slide-to="5"></li>
+          <li data-target="#carousel-sonarcube" data-slide-to="6"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="assets/images/sonarcube/pic0.png">
+            <div class="carousel-caption">
+              <h4>Final Product</h4>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/sonarcube/pic1.png">
+            <div class="carousel-caption">
+              <h4>LED cube layer by layer construction</h4>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/sonarcube/pic2.png">
+            <div class="carousel-caption">
+              <h4>Finished LED Cube</h4>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/sonarcube/pic3.png">
+            <div class="carousel-caption">
+              <h4>Connecting RGB pins to headers</h4>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/sonarcube/pic4.png">
+            <div class="carousel-caption">
+              <h4>Final control board</h4>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/sonarcube/pic5.png">
+            <div class="carousel-caption">
+              <h4>Handcut and painted wooden frame housing</h4>
+            </div>
+          </div>
+          <div class="item">
+            <img src="assets/images/sonarcube/pic6.png">
+            <div class="carousel-caption">
+              <h4>Putting final pieces together</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-sonarcube" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-sonarcube" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="atmega">
+  <div class="container">
+    <h1 style="margin-top:100px">
+      <b>Minimalist Arduino UNO</b>
+    </h1>
+    <span class="label label-success" style="font-size:medium">Completion time: 2 Days</span>
+    <a href="#projects" class="label label-danger page-scroll" style="font-size:medium">
+      <b><i class="fa fa-hand-o-up"></i> Projects</b>
+    </a>
+    <hr class="style-three">
+    <div class="row">
+      <div class="col-md-6">
+        <font size="5">Description</font>
+        <p>
+          This small microcontroller PCB is a fully functional Arduino UNO and can be programmed just like an UNO through the <i>ArduinoISP</i> sketch using the Reset, CLK, MOSI, MISO lines.
+          The total cost to make this can be less than $10 CAD and can replace an Arduino UNO in any Arduino project to save space and money. 
+        </p>
+        <font size="5">Materials</font>
+        <ul>
+          <li>1 x ATMEGA328/P-PU Chip</li>
+          <li>1 x Crystal Oscillator</li>
+          <li>2 x 22uF Capacitors</li>
+          <li>1 x 10k Resistor</li>
+          <li>1 x 1k Resistor</li>
+          <li>1 x LED</li>
+          <li>Female Headers</li>
+          <li>5V Power Supply</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <font size="5">Gallery</font>
+        <div id="carousel-atmega" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-atmega" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-atmega" data-slide-to="1"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="assets/images/atmega/board.jpg" style="width:555px;height:409px;display:block;margin-left:auto;margin-right:auto;">
+              <div class="carousel-caption">
+                <h4>EAGLE Board File</h4>
+              </div>
+            </div>
+            <div class="item">
+              <img src="assets/images/atmega/schematic.jpg" style="width:555px;height:409px;display:block;margin-left:auto;margin-right:auto;">
+              <div class="carousel-caption">
+                <h4>EAGLE Schematic File</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-atmega" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-atmega" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="musicplayer">
+  <div class="container">
+    <h1 style="margin-top:100px">
+      <b>Old Wooden Bluetooth Music Player</b>
+    </h1>
+    <span class="label label-info" style="font-size:medium">In Progress</span>
+    <a href="#projects" class="label label-danger page-scroll" style="font-size:medium">
+      <b><i class="fa fa-hand-o-up"></i> Projects</b>
+    </a>
+    <hr class="style-three">
+    <div class="row">
+      <div class="col-md-6">
+        <font size="5">Description</font>
+        <p>
+          I took a part an old wooden radio and re-connected its speakers to an external audio amplifier. The amplifier currently has female audio jack that can have any MP3 music player plugged into it. It will eventually be replaced by a bluetooth module to receive audio data and controlled through the Raspberry Pi. The webcam will stream live video to the Raspberry Pi and video processing will be done through OpenCV to allow for gesture playback controls.
+        </p>
+        <font size="5">Materials</font>
+        <ul>
+          <li>Old Radio with working speakers</li>
+          <li>PAM8403 Power Audio Amplifier</li>
+          <li>Raspberry Pi</li>
+          <li>Generic Webcam</li>
+          <li>Bluetooth Module</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <font size="5">Gallery</font>
+        <div id="carousel-musicplayer" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-musicplayer" data-slide-to="0" class="active"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="assets/images/musicplayer/oldradio_icon.jpg" style="width:555px;height:409px;display:block;margin-left:auto;margin-right:auto;">
+              <div class="carousel-caption">
+                <h4></h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-musicplayer" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-musicplayer" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="spock">
+  <div class="container">
+    <h1 style="margin-top:100px">
+      <b>SPOCK - <i>Smart Padlock</i></b>
+    </h1>
+    <span class="label label-info" style="font-size:medium">In Progress</span>
+    <a href="#projects" class="label label-danger page-scroll" style="font-size:medium">
+      <b><i class="fa fa-hand-o-up"></i> Projects</b>
+    </a>
+    <hr class="style-three">
+    <div class="row">
+      <div class="col-md-6">
+        <font size="5">Description</font>
+        <p>
+          I was tired of forgetting combinations and losing keys for padlocks so I decided to prototype a biometric finger scanning smart padlock. The mechancial housing and mechanism will be 3D printed and the finger print scanner will be used to activate a servo motor to trigger the access to the lock. I plan to eventually build a softwware platform ontop of the product such that flexible access can be given to other users who register their fingerprint with the Spock.
+        </p>
+        <font size="5">Materials</font>
+        <ul>
+          <li>Padlock</li>
+          <li>SparkFun Fingerprint Scanner - 5V TTL (GT-511C1R)</li>
+          <li>Small Servo Motor</li>
+          <li>6V Battery</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <font size="5">Gallery</font>
+        <div id="carousel-musicplayer" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-musicplayer" data-slide-to="0" class="active"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" style="width:555px;height:350px;">
+            <div class="item active">
+              <img src="assets/images/spock/spock_icon.jpg" style="display:block;margin-left:auto;margin-right:auto;margin-top:100px;">
+              <div class="carousel-caption">
+                <h4></h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-musicplayer" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-musicplayer" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <h1 style="margin-top:75px">
+      <center>Skills Summary</center>
+    </h1>
+    <hr class="style-three">
+    <div class="col-md-6">
+      <div class="panel panel-info">
+        <div class="panel-heading"><span class="panel-title"><b>Software</b></span></div>
+        <table class="table table-striped table-bordered table-condensed">
+          <thead>
+            <tr>
+              <th width="25%">Name</th>
+              <th width="65%">Proficiency</th>
+              <th width="10%">Years</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>MATLAB</td>
+              <td>
+                <div class="progress progress-striped" style="margin-bottom=0px">
+                  <div class="progress-bar progress-bar-info" style="width:90%;">
+                  </div>
+                </div>
+              </td>
+              <td align="center">5</td>
+            </tr>
+            <tr>
+              <td>C#</td>
+              <td>
+                <div class="progress progress-striped" style="margin-bottom=0px">
+                  <div class="progress-bar progress-bar-info" style="width:85%;">
+                  </div>
+                </div>
+              </td>
+              <td align="center">3</td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>
+                <div class="progress progress-striped" style="margin-bottom=0px">
+                  <div class="progress-bar progress-bar-info" style="width:80%;">
+                  </div>
+                </div>
+              </td>
+              <td align="center">5</td>
+            </tr>
+            <tr>
+              <td>C</td>
+              <td>
+                <div class="progress progress-striped" style="margin-bottom=0px">
+                  <div class="progress-bar progress-bar-info" style="width:75%;">
+                  </div>
+                </div>
+              </td>
+              <td align="center">3</td>
+            </tr>
+            <tr>
+              <td>Java</td>
+              <td>
+                <div class="progress progress-striped" style="margin-bottom=0px">
+                  <div class="progress-bar progress-bar-info" style="width:65%;">
+                  </div>
+                </div>
+              </td>
+              <td align="center">4</td>
+            </tr>
+            <tr>
+              <td>C++</td>
+              <td>
+                <div class="progress progress-striped" style="margin-bottom=0px">
+                  <div class="progress-bar progress-bar-info" style="width:50%;">
+                  </div>
+                </div>
+              </td>
+              <td align="center">3</td>
+            </tr>
+            <tr>
+              <td>SQL</td>
+              <td>
+                <div class="progress progress-striped" style="margin-bottom=0px">
+                  <div class="progress-bar progress-bar-info" style="width:45%;">
+                  </div>
+                </div>
+              </td>
+              <td align="center">2</td>
+            </tr>            
+            <!-- Graphics Design -->
+            <tr>
+              <tr>
+                <td>HTML</td>
+                <td>
+                  <div class="progress progress-striped" style="margin-bottom=0px">
+                    <div class="progress-bar progress-bar-warning" style="width:85%;">
+                    </div>
+                  </div>
+                </td>
+                <td align="center">4</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>
+                  <div class="progress progress-striped" style="margin-bottom=0px">
+                    <div class="progress-bar progress-bar-warning" style="width:80%;">
+                    </div>
+                  </div>
+                </td>
+                <td align="center">2</td>
+              </tr>
+              <tr>
+                <td>Javascript</td>
+                <td>
+                  <div class="progress progress-striped" style="margin-bottom=0px">
+                    <div class="progress-bar progress-bar-warning" style="width:30%;">
+                    </div>
+                  </div>
+                </td>
+                <td align="center">1</td>
+              </tr>
+              <tr>
+                <td>Adobe Photoshop</td>
+                <td>
+                  <div class="progress progress-striped" style="margin-bottom=0px">
+                    <div class="progress-bar progress-bar-success" style="width:50%;">
+                    </div>
+                  </div>
+                </td>
+                <td align="center">5</td>
+              </tr>
+              <!-- Software Tools -->
+              <tr>
+                <td>Microsoft Visual Studio</td>
+                <td>
+                  <div class="progress progress-striped" style="margin-bottom=0px">
+                    <div class="progress-bar progress-bar-danger" style="width:80%;">
+                    </div>
+                  </div>
+                </td>
+                <td align="center">4</td>
+              </tr>
+              <tr>
+                <td>Eclipse</td>
+                <td>
+                  <div class="progress progress-striped" style="margin-bottom=0px">
+                    <div class="progress-bar progress-bar-danger" style="width:70%;">
+                    </div>
+                  </div>
+                </td>
+                <td align="center">5</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h4 style="margin-top:10px;">
+          <span class="label label-info">Programming Languages</span>
+          <span class="label label-warning">Web Design</span>
+          <span class="label label-success">Graphic Design</span>
+          <span class="label label-danger">Software Tools</span>
+        </h4>
+      </div>
+
+      <div class="col-md-6">
+        <div class="panel panel-danger">
+          <div class="panel-heading"><span class="panel-title"><b>Hardware</b></span></div>
+          <table class="table table-striped table-bordered table-condensed">
+            <thead>
+              <tr>
+                <th width="25%">Name</th>
+                <th width="65%">Proficiency</th>
+                <th width="10%">Years</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Arduino Prototyping</td>
+                <td>
+                  <div class="progress progress-striped" style="margin-bottom=0px">
+                    <div class="progress-bar progress-bar-info" style="width:100%;">
+                    </div>
+                  </div>
+                </td>
+                <td align="center">4</td>
+              </tr>
+              <tr>
+                <td>Circuit Prototyping/Debugging</td>
+                <td>
+                  <div class="progress progress-striped" style="margin-bottom=0px">
+                    <div class="progress-bar progress-bar-info" style="width:90%;">
+                    </div>
+                  </div>
+                </td>
+                <td align="center">4</td>
+              </tr>
+              <tr>
+                <td>PCB Design/Assembly</td>
+                <td>
+                  <div class="progress progress-striped" style="margin-bottom=0px">
+                    <div class="progress-bar progress-bar-info" style="width:85%;">
+                    </div>
+                  </div>
+                </td>
+                <td align="center">2</td>
+              </tr>
+              <tr>
+                <td>FPGA Programming</td>
+                <td>
+                  <div class="progress progress-striped" style="margin-bottom=0px">
+                    <div class="progress-bar progress-bar-info" style="width:50%;">
+                    </div>
+                  </div>
+                </td>
+                <td align="center">2</td>
+              </tr>
+              <tr>
+                <td>Altera Quartus II</td>
+                <td>
+                  <div class="progress progress-striped" style="margin-bottom=0px">
+                    <div class="progress-bar progress-bar-info" style="width:50%;">
+                    </div>
+                  </div>
+                </td>
+                <td align="center">2</td>
+              </tr>
+              <tr>
+                <td>Cad Eagle</td>
+                <td>
+                  <div class="progress progress-striped" style="margin-bottom=0px">
+                    <div class="progress-bar progress-bar-warning" style="width:90%;">
+                    </div>
+                  </div>
+                </td>
+                <td align="center">2</td>
+              </tr>
+              <tr>
+                <td>LTSpice</td>
+                <td>
+                  <div class="progress progress-striped" style="margin-bottom=0px">
+                    <div class="progress-bar progress-bar-success" style="width:80%;">
+                    </div>
+                  </div>
+                </td>
+                <td align="center">2</td>
+              </tr>
+              <tr>
+                <td>LabVIEW</td>
+                <td>
+                  <div class="progress progress-striped" style="margin-bottom=0px">
+                    <div class="progress-bar progress-bar-success" style="width:60%;">
+                    </div>
+                  </div>
+                </td>
+                <td align="center">1</td>
+              </tr>              
+              <tr>
+                <td>PSIM</td>
+                <td>
+                  <div class="progress progress-striped" style="margin-bottom=0px">
+                    <div class="progress-bar progress-bar-success" style="width:50%;">
+                    </div>
+                  </div>
+                </td>
+                <td align="center">1</td>
+              </tr>
+              <tr>
+                <td>PSpice</td>
+                <td>
+                  <div class="progress progress-striped" style="margin-bottom=0px">
+                    <div class="progress-bar progress-bar-success" style="width:40%;">
+                    </div>
+                  </div>
+                </td>
+                <td align="center">1</td>
+              </tr>              
+              <tr>
+                <td>SolidWorks</td>
+                <td>
+                  <div class="progress progress-striped" style="margin-bottom=0px">
+                    <div class="progress-bar progress-bar-danger" style="width:65%;">
+                    </div>
+                  </div>
+                </td>
+                <td align="center">2</td>
+              </tr>              
+              <tr>
+                <td>MSC ADAMS</td>
+                <td>
+                  <div class="progress progress-striped" style="margin-bottom=0px">
+                    <div class="progress-bar progress-bar-danger" style="width:50%;">
+                    </div>
+                  </div>
+                </td>
+                <td align="center">1</td>
+              </tr>
+              <tr>
+                <td>AutoCAD</td>
+                <td>
+                  <div class="progress progress-striped" style="margin-bottom=0px">
+                    <div class="progress-bar progress-bar-danger" style="width:40%;">
+                    </div>
+                  </div>
+                </td>
+                <td align="center">2</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h4 style="margin-top:10px;">
+          <span class="label label-info">Rapid Prototyping</span>
+          <span class="label label-warning">PCB Design</span>
+          <span class="label label-success">Circuit Simulation</span>
+          <span class="label label-danger">Modelling Software</span>
+        </h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer SECTION -->
+  <section id="footer">
+    <div class="black-background">
+      <div class="container">
+        <hr class="style-one">
+        <div class="row">
+          <ul class="list-inline text-center">
+            <li><a target="new" href="https://www.facebook.com/jeremy.wang.3990" class="btn btn-lg btn-primary"><i class="fa fa-facebook"></i></a></li>
+            <li><a target="new" href="https://twitter.com/thejerbotron" class="btn btn-lg btn-primary"><i class="fa fa-twitter"></i></a></li>
+            <li><a target="new" href="https://ca.linkedin.com/pub/jeremy-wang/38/b95/153" class="btn btn-lg btn-primary"><i class="fa fa-linkedin"></i></a></li>
+            <li><a target="new" href="http://instagram.com/jereremy22" class="btn btn-lg btn-primary"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+          <div class="col-md-4">
+            <div align="left">
+              <i class="fa fa-edit"></i> Designed by Jeremy Wang using Twitter Bootstrap
+            </div>
+          </div>
+          <div align="right">
+            <a href="#page-top" class="btn btn-sm btn-primary page-scroll"><i class="fa fa-hand-o-up"></i> Back to top</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      <!-- Javascript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="assets/js/jquery.js"></script>
+      <script src="assets/js/bootstrap.js"></script>
+      <script src="assets/js/bootstrap.min.js"></script>
+
+      <!-- Tooltip Popover JS -->
+      <script src="assets/js/bootstrap-tooltip.js"></script>
+      <script src="assets/js/bootstrap-popover.js"></script>
+
+      <!-- Scrolling JavaScript -->
+      <script src="assets/js/jquery.easing.min.js"></script>
+      <script src="assets/js/scrolling-nav.js"></script>
+
+      <!-- Dropdown JS -->
+      <script src="assets/js/bootstrap-dropdown.js"></script>
+      <script src="assets/js/bootstrap-hover-dropdown.js"></script>
+      <script>
+      $("[rel='tooltip']").tooltip();    
+
+      $('.thumbnail').hover(
+        function(){
+            $(this).find('.caption').slideDown(250); //.fadeIn(250)
+          },
+          function(){
+            $(this).find('.caption').slideUp(250); //.fadeOut(205)
+          }
+          ); 
+
+      $('.subnav').affix({
+        offset: {
+          top: $('#navtop').height()
+        }
+      }); 
+
+      </script>
+
+    </body>
+    </html>
