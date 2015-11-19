@@ -1,0 +1,405 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"min",
+				"min_costs"
+			],
+			[
+				"cur",
+				"current_pos"
+			],
+			[
+				"prin",
+				"print_path"
+			],
+			[
+				"ne",
+				"neighbor-1"
+			],
+			[
+				"cl",
+				"clear"
+			],
+			[
+				"num",
+				"num_of_nodes"
+			],
+			[
+				"el",
+				"elapsed_secs"
+			],
+			[
+				"nei",
+				"neighbor"
+			],
+			[
+				"nu",
+				"num_of_nodes"
+			],
+			[
+				"te",
+				"temp_val"
+			],
+			[
+				"prev",
+				"prev_min"
+			],
+			[
+				"curr",
+				"current_pos-1"
+			],
+			[
+				"print",
+				"print_costs"
+			],
+			[
+				"get",
+				"get_min_cost"
+			],
+			[
+				"beg",
+				"begin"
+			],
+			[
+				"print_",
+				"print_path"
+			],
+			[
+				"push",
+				"push_queue"
+			],
+			[
+				"cu",
+				"current_pos"
+			],
+			[
+				"no",
+				"nodes"
+			],
+			[
+				"pop",
+				"pop_back"
+			],
+			[
+				"pri",
+				"print_neighbors"
+			],
+			[
+				"be",
+				"begin-1"
+			],
+			[
+				"path",
+				"path_queue"
+			],
+			[
+				"node",
+				"node_iter"
+			],
+			[
+				"up",
+				"update_cost"
+			],
+			[
+				"ed",
+				"edges"
+			],
+			[
+				"nod",
+				"node_costs"
+			],
+			[
+				"pu",
+				"push_back"
+			],
+			[
+				"b",
+				"begin"
+			],
+			[
+				"edg",
+				"edges"
+			],
+			[
+				"edge",
+				"edge_vector"
+			],
+			[
+				"x",
+				"x_pos"
+			],
+			[
+				"draw",
+				"drawAmplitude"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 342.0,
+		"last_filter": "in",
+		"selected_items":
+		[
+			[
+				"in",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"set syntax: ru",
+				"Set Syntax: Ruby"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"indent",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"set syntax: py",
+				"Set Syntax: Python"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			]
+		],
+		"width": 398.0
+	},
+	"console":
+	{
+		"height": 118.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/jeremy/github/jw-personal-site"
+	],
+	"file_history":
+	[
+		"/home/jeremy/Projects/rails/workspace/blog/app/views/comments/show.html.erb",
+		"/home/jeremy/Projects/rails/workspace/blog/app/models/comment.rb",
+		"/home/jeremy/Projects/rails/workspace/blog/app/controllers/posts_controller.rb",
+		"/home/jeremy/Projects/rails/workspace/blog/db/schema.rb",
+		"/home/jeremy/Projects/rails/workspace/blog/app/helpers/posts_helper.rb",
+		"/home/jeremy/github/codeforce/cut_ribbon/cut_ribbon.c++",
+		"/home/jeremy/Projects/rails/workspace/blog/test2.in",
+		"/home/jeremy/github/oopni/dijkstra/input.in",
+		"/home/jeremy/github/oopni/dijkstra/test.in",
+		"/home/jeremy/github/oopni/dijkstra/dijkstra.c++",
+		"/home/jeremy/github/oopni/dijkstra/dijkstra2.c++",
+		"/home/jeremy/github/oopni/test.in",
+		"/home/jeremy/github/oopni/dijkstra.c++",
+		"/home/jeremy/github/oopni/input.in",
+		"/home/jeremy/Projects/rails/workspace/blog/db/migrate/20150920224716_create_posts.rb",
+		"/home/jeremy/Projects/rails/workspace/blog/db/migrate/20150920224914_create_comments.rb",
+		"/home/jeremy/Projects/rails/blog/blog/app/controllers/application_controller.rb",
+		"/home/jeremy/Projects/rails/blog/blog/app/controllers/concerns/.keep",
+		"/home/jeremy/Projects/rails/blog/blog/db/development.sqlite3",
+		"/home/jeremy/Projects/rails/blog/blog/db/schema.rb",
+		"/home/jeremy/Projects/rails/blog/blog/app/views/comments/index.html.erb",
+		"/home/jeremy/Projects/rails/blog/blog/app/models/post.rb",
+		"/home/jeremy/Projects/rails/blog/blog/app/models/comment.rb",
+		"/home/jeremy/.config/sublime-text-3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
+		"/home/jeremy/Dropbox/Projects/2048Game/board.py",
+		"/home/jeremy/Dropbox/Projects/2048Game/main.py",
+		"/home/jeremy/Projects/visualEqualizer.py",
+		"/home/jeremy/Arduino/LED Music Box/LEDs_music_box/LEDs_music_box (copy).ino.bak",
+		"/home/jeremy/Arduino/LED Music Box/LEDs_music_box/functions.c",
+		"/home/jeremy/Projects/sge-pygame-0.20/examples/pong.py",
+		"/home/jeremy/Projects/sge-pygame-0.20/examples/circle_popper.py",
+		"/home/jeremy/Dropbox/Projects/2048Game/solver.py"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 82.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"long long int",
+			"long long",
+			"int",
+			"current_pos",
+			"print_costs",
+			".back()",
+			"prlong_costs",
+			"int",
+			".path",
+			"edges",
+			"add_neighbor",
+			"push_path",
+			"pop_path",
+			"node_iter",
+			"cout",
+			"path_queue",
+			"remove_node",
+			"path_queue",
+			"			\n",
+			"map<",
+			"stdevArr",
+			"colordict",
+			"colour",
+			"color",
+			".\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"long",
+			"print_costs",
+			"long"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 179.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "jw-personal-site.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 229.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
