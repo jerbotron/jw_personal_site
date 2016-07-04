@@ -13,17 +13,10 @@
 }
 
 .quote{
-	padding-top: 50px;
-	text-align: center;
-	/*font-style: italic;*/
+	text-align: left;
 	font-weight: bold;
 }
-.author{
-	text-align: center;
-	font-style: italic;
-}
-.profile{
-	padding-top: 25px;
+.bio{
 	font-family: "gaspar", Arial, serif;
 	padding-bottom: 375px;
 }
@@ -68,7 +61,6 @@ hr.style-three {
 }
 .black-background{
 	background-color: #161616;
-	margin-top: 50px;
 	padding-top: 25px;
 	padding-bottom: 25px;
 }

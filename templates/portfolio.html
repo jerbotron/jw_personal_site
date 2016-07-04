@@ -11,15 +11,15 @@
     <title>Portfolio</title>
 
     <!-- Style Links -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-theme.css" rel="stylesheet">
-    <link href="assets/css/custom.css" rel="stylesheet">
-    <link href="assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/scrolling-nav.css" rel="stylesheet">
+    <link href="/static/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/assets/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="/static/assets/css/custom.css" rel="stylesheet">
+    <link href="/static/assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/assets/css/scrolling-nav.css" rel="stylesheet">
 
     <style>
     .jumbotron {
-      background: url("assets/images/jumbotron_ironman.jpg") 75% -300px;
+      background: url("/static/assets/images/jumbotron_ironman.jpg") 75% -300px;
       background-color: white;
       /*position: fixed;*/
       width: 100%;
@@ -84,7 +84,7 @@
         <div class="navbar-header page-scroll">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
           </button>
-          <a class="navbar-brand page-scroll" href="index.html"><b>JW</b></a>
+          <a class="navbar-brand page-scroll" href="index"><b>JW</b></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -92,34 +92,34 @@
           <ul class="nav navbar-nav">
 
             <li class="dropdown">
-              <a class="dropdown-toggle" data-hover="dropdown" href="index.html">Home<b class="caret"></b></a>
+              <a class="dropdown-toggle" data-hover="dropdown" href="index">Home<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li class="nav-dropdown"><a class="page-scroll" href="index.html#about">About</a></li>
-                <li class="nav-dropdown"><a class="page-scroll" href="index.html#contact">Contact</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="index#about">About</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="index#contact">Contact</a></li>
               </ul>
             </li>
 
             <li class="dropdown">
-              <a class="dropdown-toggle" data-hover="dropdown" href="education.html">Education<b class="caret"></b></a>
+              <a class="dropdown-toggle" data-hover="dropdown" href="education">Education<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li class="nav-dropdown"><a class="page-scroll" href="education.html#grades">Grades</a></li>
-                <li class="nav-dropdown"><a class="page-scroll" href="education.html#awards">Awards</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="education#grades">Grades</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="education#awards">Awards</a></li>
               </ul>
             </li>
 
             <li class="dropdown">
-              <a class="dropdown-toggle" data-hover="dropdown" href="experience.html">Experience<b class="caret"></b></a>
+              <a class="dropdown-toggle" data-hover="dropdown" href="experience">Experience<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li class="nav-dropdown"><a class="page-scroll" href="experience.html#lumotune">Hardware Designer (Lumotune)</a></li>
-                <li class="nav-dropdown"><a class="page-scroll" href="experience.html#ims">Software Engineer (IMS)</a></li>
-                <li class="nav-dropdown"><a class="page-scroll" href="experience.html#zspace">Display Engineer (zSpace)</a></li>
-                <li class="nav-dropdown"><a class="page-scroll" href="experience.html#ignis">Engineering Intern (IGNIS Innovation)</a></li>
-                <li class="nav-dropdown"><a class="page-scroll" href="experience.html#pck">Patent Services IT Assistant (PCK Inc)</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="experience#lumotune">Hardware Designer (Lumotune)</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="experience#ims">Software Engineer (IMS)</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="experience#zspace">Display Engineer (zSpace)</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="experience#ignis">Engineering Intern (IGNIS Innovation)</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="experience#pck">Patent Services IT Assistant (PCK Inc)</a></li>
               </ul>
             </li>
 
             <li class="dropdown">
-              <a class="dropdown-toggle" data-hover="dropdown" href="portfolio.html">Portfolio<b class="caret"></b></a>
+              <a class="dropdown-toggle" data-hover="dropdown" href="portfolio">Portfolio<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li class="nav-dropdown"><a class="page-scroll" href="#page-top">Top</a></li>
                 <li class="nav-dropdown"><a class="page-scroll" href="#projects">Personal Projects</a></li>
@@ -130,7 +130,7 @@
             <li class="dropdown">
               <a class="dropdown-toggle" data-hover="dropdown">Contact<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li class="nav-dropdown"><a class="page-scroll" href="index.html#contact"><i class="fa fa-edit"></i> Leave a Message</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="index#contact"><i class="fa fa-edit"></i> Leave a Message</a></li>
                 <li class="nav-dropdown"><a href="mailto:jy7wang@uwaterloo.ca" target="new"><i class="fa fa-envelope"></i> jy7wang@uwaterloo.ca</a></li>
                 <li class="divider"></li>
                 <li class="nav-header"><b>Social Media</b></li>
@@ -141,7 +141,7 @@
               </ul>
             </li>
             <form class="navbar-form navbar-left" role="navigation">
-              <a class="btn btn-info btn-sm" aria-label="Left Align" href="http://www.eng.uwaterloo.ca/~jy7wang/coop/resume.pdf" target="_blank">
+              <a class="btn btn-info btn-sm" aria-label="Left Align" href="/static/coop/resume.pdf" target="_blank">
                 <span class="glyphicon glyphicon-print" aria-hidden="true"></span> View Printable Resume 
               </a>
             </form>
@@ -196,7 +196,7 @@
                 <a href="#wordclock" class="label label-danger page-scroll" rel="tooltip">Details</a>
               </h3>
             </div>
-            <img src="assets/images/wordclock/wordclock_icon.jpg">
+            <img src="/static/assets/images/wordclock/wordclock_icon.jpg">
           </div>
         </div>
 
@@ -210,7 +210,7 @@
               <a href="#sonarcube" class="label label-danger page-scroll" rel="tooltip">Details</a>
             </h3>
           </div>
-          <img src="assets/images/sonarcube/sonarcube_icon.jpg">
+          <img src="/static/assets/images/sonarcube/sonarcube_icon.jpg">
         </div>
       </div>
 
@@ -224,7 +224,7 @@
             <a href="#atmega" class="label label-danger page-scroll" rel="tooltip">Details</a>
           </h3>
         </div>
-        <img src="assets/images/atmega/atmega328_icon.jpg" width="77%">
+        <img src="/static/assets/images/atmega/atmega328_icon.jpg" width="77%">
       </div>
     </div>
 
@@ -241,7 +241,7 @@
           <a href="#musicplayer" class="label label-danger page-scroll" rel="tooltip">Details</a>
         </h3>
       </div>
-      <img src="assets/images/musicplayer/oldradio_icon.jpg" style="margin-top:35px">
+      <img src="/static/assets/images/musicplayer/oldradio_icon.jpg" style="margin-top:35px">
     </div>
   </div>
 
@@ -257,7 +257,7 @@
           <a href="#spock" class="label label-danger page-scroll" rel="tooltip">Details</a>
         </h3>
       </div>
-      <img src="assets/images/spock/spock_icon.jpg" style="margin-top:100px">
+      <img src="/static/assets/images/spock/spock_icon.jpg" style="margin-top:100px">
     </div>
   </div>
 
@@ -309,43 +309,43 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
-              <img src="assets/images/wordclock/pic0.jpg">
+              <img src="/static/assets/images/wordclock/pic0.jpg">
               <div class="carousel-caption">
                 <h4>Final Product</h4>
               </div>
             </div>
             <div class="item">
-              <img src="assets/images/wordclock/pic1.jpg">
+              <img src="/static/assets/images/wordclock/pic1.jpg">
               <div class="carousel-caption">
                 <h4>Letter mask transparency</h4>
               </div>
             </div>
             <div class="item">
-              <img src="assets/images/wordclock/pic2.jpg">
+              <img src="/static/assets/images/wordclock/pic2.jpg">
               <div class="carousel-caption">
                 <h4>LED setup</h4>
               </div>
             </div>
             <div class="item">
-              <img src="assets/images/wordclock/pic3.jpg">
+              <img src="/static/assets/images/wordclock/pic3.jpg">
               <div class="carousel-caption">
                 <h4>Display driver(right), controller(left)</h4>
               </div>
             </div>
             <div class="item">
-              <img src="assets/images/wordclock/pic4.jpg">
+              <img src="/static/assets/images/wordclock/pic4.jpg">
               <div class="carousel-caption">
                 <h4>Display driver(right), controller(left)</h4>
               </div>
             </div>
             <div class="item">
-              <img src="assets/images/wordclock/pic5.jpg">
+              <img src="/static/assets/images/wordclock/pic5.jpg">
               <div class="carousel-caption">
                 <h4>Software testing</h4>
               </div>
             </div>
             <div class="item">
-              <img src="assets/images/wordclock/pic6.jpg" style="width:409px;height:409px;display:block;margin-left:auto;margin-right:auto;">
+              <img src="/static/assets/images/wordclock/pic6.jpg" style="width:409px;height:409px;display:block;margin-left:auto;margin-right:auto;">
               <div class="carousel-caption">
                 <h4>Final Housing</h4>
               </div>
@@ -417,43 +417,43 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
           <div class="item active">
-            <img src="assets/images/sonarcube/pic0.png">
+            <img src="/static/assets/images/sonarcube/pic0.png">
             <div class="carousel-caption">
               <h4>Final Product</h4>
             </div>
           </div>
           <div class="item">
-            <img src="assets/images/sonarcube/pic1.png">
+            <img src="/static/assets/images/sonarcube/pic1.png">
             <div class="carousel-caption">
               <h4>LED cube layer by layer construction</h4>
             </div>
           </div>
           <div class="item">
-            <img src="assets/images/sonarcube/pic2.png">
+            <img src="/static/assets/images/sonarcube/pic2.png">
             <div class="carousel-caption">
               <h4>Finished LED Cube</h4>
             </div>
           </div>
           <div class="item">
-            <img src="assets/images/sonarcube/pic3.png">
+            <img src="/static/assets/images/sonarcube/pic3.png">
             <div class="carousel-caption">
               <h4>Connecting RGB pins to headers</h4>
             </div>
           </div>
           <div class="item">
-            <img src="assets/images/sonarcube/pic4.png">
+            <img src="/static/assets/images/sonarcube/pic4.png">
             <div class="carousel-caption">
               <h4>Final control board</h4>
             </div>
           </div>
           <div class="item">
-            <img src="assets/images/sonarcube/pic5.png">
+            <img src="/static/assets/images/sonarcube/pic5.png">
             <div class="carousel-caption">
               <h4>Handcut and painted wooden frame housing</h4>
             </div>
           </div>
           <div class="item">
-            <img src="assets/images/sonarcube/pic6.png">
+            <img src="/static/assets/images/sonarcube/pic6.png">
             <div class="carousel-caption">
               <h4>Putting final pieces together</h4>
             </div>
@@ -514,13 +514,13 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
-              <img src="assets/images/atmega/board.jpg" style="width:555px;height:409px;display:block;margin-left:auto;margin-right:auto;">
+              <img src="/static/assets/images/atmega/board.jpg" style="width:555px;height:409px;display:block;margin-left:auto;margin-right:auto;">
               <div class="carousel-caption">
                 <h4>EAGLE Board File</h4>
               </div>
             </div>
             <div class="item">
-              <img src="assets/images/atmega/schematic.jpg" style="width:555px;height:409px;display:block;margin-left:auto;margin-right:auto;">
+              <img src="/static/assets/images/atmega/schematic.jpg" style="width:555px;height:409px;display:block;margin-left:auto;margin-right:auto;">
               <div class="carousel-caption">
                 <h4>EAGLE Schematic File</h4>
               </div>
@@ -576,7 +576,7 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
-              <img src="assets/images/musicplayer/oldradio_icon.jpg" style="width:555px;height:409px;display:block;margin-left:auto;margin-right:auto;">
+              <img src="/static/assets/images/musicplayer/oldradio_icon.jpg" style="width:555px;height:409px;display:block;margin-left:auto;margin-right:auto;">
               <div class="carousel-caption">
                 <h4></h4>
               </div>
@@ -631,7 +631,7 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner" style="width:555px;height:350px;">
             <div class="item active">
-              <img src="assets/images/spock/spock_icon.jpg" style="display:block;margin-left:auto;margin-right:auto;margin-top:100px;">
+              <img src="/static/assets/images/spock/spock_icon.jpg" style="display:block;margin-left:auto;margin-right:auto;margin-top:100px;">
               <div class="carousel-caption">
                 <h4></h4>
               </div>
@@ -996,21 +996,21 @@
       <!-- Javascript
       ================================================== -->
       <!-- Placed at the end of the document so the pages load faster -->
-      <script src="assets/js/jquery.js"></script>
-      <script src="assets/js/bootstrap.js"></script>
-      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="/static/assets/js/jquery.js"></script>
+      <script src="/static/assets/js/bootstrap.js"></script>
+      <script src="/static/assets/js/bootstrap.min.js"></script>
 
       <!-- Tooltip Popover JS -->
-      <script src="assets/js/bootstrap-tooltip.js"></script>
-      <script src="assets/js/bootstrap-popover.js"></script>
+      <script src="/static/assets/js/bootstrap-tooltip.js"></script>
+      <script src="/static/assets/js/bootstrap-popover.js"></script>
 
       <!-- Scrolling JavaScript -->
-      <script src="assets/js/jquery.easing.min.js"></script>
-      <script src="assets/js/scrolling-nav.js"></script>
+      <script src="/static/assets/js/jquery.easing.min.js"></script>
+      <script src="/static/assets/js/scrolling-nav.js"></script>
 
       <!-- Dropdown JS -->
-      <script src="assets/js/bootstrap-dropdown.js"></script>
-      <script src="assets/js/bootstrap-hover-dropdown.js"></script>
+      <script src="/static/assets/js/bootstrap-dropdown.js"></script>
+      <script src="/static/assets/js/bootstrap-hover-dropdown.js"></script>
       <script>
       $("[rel='tooltip']").tooltip();    
 

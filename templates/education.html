@@ -11,15 +11,15 @@
     <title>Education</title>
 
     <!-- Style Links -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-theme.css" rel="stylesheet">
-    <link href="assets/css/custom.css" rel="stylesheet">
-    <link href="assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/scrolling-nav.css" rel="stylesheet">
+    <link href="/static/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/assets/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="/static/assets/css/custom.css" rel="stylesheet">
+    <link href="/static/assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/assets/css/scrolling-nav.css" rel="stylesheet">
 
     <style>
     .jumbotron {
-      background: url("assets/images/jumbotron_wolverine.jpg") right 750px;
+      background: url("/static/assets/images/jumbotron_wolverine.jpg") right 750px;
       background-color: white;
       /*position: fixed;*/
       width: 100%;
@@ -59,7 +59,7 @@
         <div class="navbar-header page-scroll">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
           </button>
-          <a class="navbar-brand page-scroll" href="index.html"><b>JW</b></a>
+          <a class="navbar-brand page-scroll" href="index"><b>JW</b></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -67,15 +67,15 @@
           <ul class="nav navbar-nav">
 
             <li class="dropdown">
-              <a class="dropdown-toggle" data-hover="dropdown" href="index.html">Home<b class="caret"></b></a>
+              <a class="dropdown-toggle" data-hover="dropdown" href="index">Home<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li class="nav-dropdown"><a class="page-scroll" href="index.html#about">About</a></li>
-                <li class="nav-dropdown"><a class="page-scroll" href="index.html#contact">Contact</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="index#about">About</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="index#contact">Contact</a></li>
               </ul>
             </li>
 
             <li class="dropdown">
-              <a class="dropdown-toggle" data-hover="dropdown" href="education.html">Education<b class="caret"></b></a>
+              <a class="dropdown-toggle" data-hover="dropdown" href="education">Education<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li class="nav-dropdown"><a class="page-scroll" href="#page-top">Top</a></li>
                 <li class="nav-dropdown"><a class="page-scroll" href="#grades">Grades</a></li>
@@ -84,28 +84,28 @@
             </li>
 
             <li class="dropdown">
-              <a class="dropdown-toggle" data-hover="dropdown" href="experience.html">Experience<b class="caret"></b></a>
+              <a class="dropdown-toggle" data-hover="dropdown" href="experience">Experience<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li class="nav-dropdown"><a class="page-scroll" href="experience.html#lumotune">Hardware Designer (Lumotune)</a></li>
-                <li class="nav-dropdown"><a class="page-scroll" href="experience.html#ims">Software Engineer (IMS)</a></li>
-                <li class="nav-dropdown"><a class="page-scroll" href="experience.html#zspace">Display Engineer (zSpace)</a></li>
-                <li class="nav-dropdown"><a class="page-scroll" href="experience.html#ignis">Engineering Intern (IGNIS Innovation)</a></li>
-                <li class="nav-dropdown"><a class="page-scroll" href="experience.html#pck">Patent Services IT Assistant (PCK Inc)</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="experience#lumotune">Hardware Designer (Lumotune)</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="experience#ims">Software Engineer (IMS)</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="experience#zspace">Display Engineer (zSpace)</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="experience#ignis">Engineering Intern (IGNIS Innovation)</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="experience#pck">Patent Services IT Assistant (PCK Inc)</a></li>
               </ul>
             </li>
 
             <li class="dropdown">
-              <a class="dropdown-toggle" data-hover="dropdown" href="portfolio.html">Portfolio<b class="caret"></b></a>
+              <a class="dropdown-toggle" data-hover="dropdown" href="portfolio">Portfolio<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li class="nav-dropdown"><a class="page-scroll" href="portfolio.html#projects">Personal Projects</a></li>
-                <li class="nav-dropdown"><a class="page-scroll" href="portfolio.html#skills">Skills Summary</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="portfolio#projects">Personal Projects</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="portfolio#skills">Skills Summary</a></li>
               </ul>
             </li>
 
             <li class="dropdown">
               <a class="dropdown-toggle" data-hover="dropdown">Contact<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li class="nav-dropdown"><a class="page-scroll" href="index.html#contact"><i class="fa fa-edit"></i> Leave a Message</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="index#contact"><i class="fa fa-edit"></i> Leave a Message</a></li>
                 <li class="nav-dropdown"><a href="mailto:jy7wang@uwaterloo.ca" target="new"><i class="fa fa-envelope"></i> jy7wang@uwaterloo.ca</a></li>
                 <li class="divider"></li>
                 <li class="nav-header"><b>Social Media</b></li>
@@ -116,7 +116,7 @@
               </ul>
             </li>
             <form class="navbar-form navbar-left" role="navigation">
-              <a class="btn btn-info btn-sm" aria-label="Left Align" href="http://www.eng.uwaterloo.ca/~jy7wang/coop/resume.pdf" target="_blank">
+              <a class="btn btn-info btn-sm" aria-label="Left Align" href="/static/coop/resume.pdf" target="_blank">
                 <span class="glyphicon glyphicon-print" aria-hidden="true"></span> View Printable Resume 
               </a>
             </form>
@@ -705,21 +705,21 @@
       <!-- Javascript
       ================================================== -->
       <!-- Placed at the end of the document so the pages load faster -->
-      <script src="assets/js/jquery.js"></script>
-      <script src="assets/js/bootstrap.js"></script>
-      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="/static/assets/js/jquery.js"></script>
+      <script src="/static/assets/js/bootstrap.js"></script>
+      <script src="/static/assets/js/bootstrap.min.js"></script>
 
       <!-- Tooltip Popover JS -->
-      <script src="assets/js/bootstrap-tooltip.js"></script>
-      <script src="assets/js/bootstrap-popover.js"></script>
+      <script src="/static/assets/js/bootstrap-tooltip.js"></script>
+      <script src="/static/assets/js/bootstrap-popover.js"></script>
 
       <!-- Scrolling JS -->
-      <script src="assets/js/jquery.easing.min.js"></script>
-      <script src="assets/js/scrolling-nav.js"></script>
+      <script src="/static/assets/js/jquery.easing.min.js"></script>
+      <script src="/static/assets/js/scrolling-nav.js"></script>
 
       <!-- Dropdown JS -->
-      <script src="assets/js/bootstrap-dropdown.js"></script>
-      <script src="assets/js/bootstrap-hover-dropdown.js"></script>
+      <script src="/static/assets/js/bootstrap-dropdown.js"></script>
+      <script src="/static/assets/js/bootstrap-hover-dropdown.js"></script>
 
       <script>$(function () { $("[data-toggle='popover']").popover(); }); 
       </script>

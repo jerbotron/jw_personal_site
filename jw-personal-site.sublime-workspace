@@ -139,6 +139,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 13558,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "assets/css/custom.css",
+			"settings":
+			{
+				"buffer_size": 2267,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -213,7 +229,9 @@
 	},
 	"expanded_folders":
 	[
-		"/home/jeremy/github/jw-personal-site"
+		"/home/jeremy/github/jw-personal-site",
+		"/home/jeremy/github/jw-personal-site/assets",
+		"/home/jeremy/github/jw-personal-site/assets/css"
 	],
 	"file_history":
 	[
@@ -252,7 +270,7 @@
 	],
 	"find":
 	{
-		"height": 22.0
+		"height": 33.0
 	},
 	"find_in_files":
 	{
@@ -266,6 +284,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"id=\"",
 			"long long int",
 			"long long",
 			"int",
@@ -311,8 +330,70 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13558,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1348,
+								1352
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 558.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "assets/css/custom.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2267,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								303,
+								303
+							]
+						],
+						"settings":
+						{
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],

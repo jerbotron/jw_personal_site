@@ -11,15 +11,15 @@
     <title>Experience</title>
 
     <!-- Style Links -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-theme.css" rel="stylesheet">
-    <link href="assets/css/custom.css" rel="stylesheet">
-    <link href="assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/scrolling-nav.css" rel="stylesheet">
+    <link href="/static/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/static/assets/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="/static/assets/css/custom.css" rel="stylesheet">
+    <link href="/static/assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/assets/css/scrolling-nav.css" rel="stylesheet">
 
     <style>
     .jumbotron {
-      background: url("assets/images/jumbotron_hulk.jpg") right -325px;
+      background: url("/static/assets/images/jumbotron_hulk.jpg") right -325px;
       background-color: white;
       /*position: fixed;*/
       width: 100%;
@@ -62,7 +62,7 @@
         <div class="navbar-header page-scroll">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
           </button>
-          <a class="navbar-brand page-scroll" href="index.html"><b>JW</b></a>
+          <a class="navbar-brand page-scroll" href="index"><b>JW</b></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -70,23 +70,23 @@
           <ul class="nav navbar-nav">
 
             <li class="dropdown">
-              <a class="dropdown-toggle" data-hover="dropdown" href="index.html">Home<b class="caret"></b></a>
+              <a class="dropdown-toggle" data-hover="dropdown" href="index">Home<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li class="nav-dropdown"><a class="page-scroll" href="index.html#about">About</a></li>
-                <li class="nav-dropdown"><a class="page-scroll" href="index.html#contact">Contact</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="index#about">About</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="index#contact">Contact</a></li>
               </ul>
             </li>
 
             <li class="dropdown">
-              <a class="dropdown-toggle" data-hover="dropdown" href="education.html">Education<b class="caret"></b></a>
+              <a class="dropdown-toggle" data-hover="dropdown" href="education">Education<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li class="nav-dropdown"><a class="page-scroll" href="education.html#grades">Grades</a></li>
-                <li class="nav-dropdown"><a class="page-scroll" href="education.html#awards">Awards</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="education#grades">Grades</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="education#awards">Awards</a></li>
               </ul>
             </li>
 
             <li class="dropdown">
-              <a class="dropdown-toggle" data-hover="dropdown" href="experience.html">Experience<b class="caret"></b></a>
+              <a class="dropdown-toggle" data-hover="dropdown" href="experience">Experience<b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li class="nav-dropdown"><a class="page-scroll" href="#page-top">Top</a></li>
                 <li class="nav-dropdown"><a class="page-scroll" href="#lumotune">Hardware Designer (Lumotune)</a></li>
@@ -98,17 +98,17 @@
             </li>
 
             <li class="dropdown">
-              <a class="dropdown-toggle" data-hover="dropdown" href="portfolio.html">Portfolio<b class="caret"></b></a>
+              <a class="dropdown-toggle" data-hover="dropdown" href="portfolio">Portfolio<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li class="nav-dropdown"><a class="page-scroll" href="portfolio.html#projects">Personal Projects</a></li>
-                <li class="nav-dropdown"><a class="page-scroll" href="portfolio.html#skills">Skills Summary</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="portfolio#projects">Personal Projects</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="portfolio#skills">Skills Summary</a></li>
               </ul>
             </li>
 
             <li class="dropdown">
               <a class="dropdown-toggle" data-hover="dropdown">Contact<b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li class="nav-dropdown"><a class="page-scroll" href="index.html#contact"><i class="fa fa-edit"></i> Leave a Message</a></li>
+                <li class="nav-dropdown"><a class="page-scroll" href="index#contact"><i class="fa fa-edit"></i> Leave a Message</a></li>
                 <li class="nav-dropdown"><a href="mailto:jy7wang@uwaterloo.ca" target="new"><i class="fa fa-envelope"></i> jy7wang@uwaterloo.ca</a></li>
                 <li class="divider"></li>
                 <li class="nav-header"><b>Social Media</b></li>
@@ -119,7 +119,7 @@
               </ul>
             </li>
             <form class="navbar-form navbar-left" role="navigation">
-              <a class="btn btn-info btn-sm" aria-label="Left Align" href="http://www.eng.uwaterloo.ca/~jy7wang/coop/resume.pdf" target="_blank">
+              <a class="btn btn-info btn-sm" aria-label="Left Align" href="/static/coop/resume.pdf" target="_blank">
                 <span class="glyphicon glyphicon-print" aria-hidden="true"></span> View Printable Resume 
               </a>
             </form>
@@ -165,7 +165,7 @@
           <b>Hardware Design Engineer</b> <small>Lumotune, Waterloo, ON, Canada</small>
           <span class="alignright">
             <a href="http://lumotune.com/" target="new">
-              <img src="assets/images/lumotune_logo.png" alt="Lumotune" width="145" height="80">
+              <img src="/static/assets/images/lumotune_logo.png" alt="Lumotune" width="145" height="80">
             </a>
           </span>
         </h1>
@@ -216,7 +216,7 @@
               <b>Software Engineer</b> <small>Intelligent Mechatronics Systems (IMS), Waterloo, ON, Canada</small>
               <span class="alignright">
                 <a href="http://www.intellimec.com/" target="new">
-                  <img src="assets/images/ims_logo.png" alt="IMS" width="145" height="80">
+                  <img src="/static/assets/images/ims_logo.png" alt="IMS" width="145" height="80">
                 </a>
               </span>
             </h1>
@@ -261,7 +261,7 @@
             <h1 style="margin-top:100px"><b>Display Engineer</b> <small>zSpace, Mountain View, California, USA</small>
               <span class="alignright">
                 <a href="http://zspace.com/" target="new">
-                  <img src="assets/images/zspace_logo.png" alt="zSpace">
+                  <img src="/static/assets/images/zspace_logo.png" alt="zSpace">
                 </a>
               </span>
             </h1>
@@ -302,7 +302,7 @@
               <b>Engineering Intern</b> <small>IGNIS Innovation, Waterloo, ON, Canada</small>
               <span class="alignright">
                 <a href="http://www.ignisinnovation.com/" target="new">
-                  <img src="assets/images/ignis_logo.png" alt="IGNIS" witdh="131" height="64">
+                  <img src="/static/assets/images/ignis_logo.png" alt="IGNIS" witdh="131" height="64">
                 </a>
               </span>
             </h1>
@@ -341,7 +341,7 @@
               <b>Patent Services IT Assistant</b> <small>PCK Inc., Toronto, Canada</small>
               <span class="alignright">
                 <a href="http://www.pckip.com/" target="new">
-                  <img src="assets/images/pck_logo.png" alt="PCK">
+                  <img src="/static/assets/images/pck_logo.png" alt="PCK">
                 </a>
               </span>
             </h1>
@@ -402,21 +402,21 @@
       <!-- Javascript
       ================================================== -->
       <!-- Placed at the end of the document so the pages load faster -->
-      <script src="assets/js/jquery.js"></script>
-      <script src="assets/js/bootstrap.js"></script>
-      <script src="assets/js/bootstrap.min.js"></script>
+      <script src="/static/assets/js/jquery.js"></script>
+      <script src="/static/assets/js/bootstrap.js"></script>
+      <script src="/static/assets/js/bootstrap.min.js"></script>
 
       <!-- Tooltip Popover JS -->
-      <script src="assets/js/bootstrap-tooltip.js"></script>
-      <script src="assets/js/bootstrap-popover.js"></script>
+      <script src="/static/assets/js/bootstrap-tooltip.js"></script>
+      <script src="/static/assets/js/bootstrap-popover.js"></script>
 
       <!-- Scrolling JS -->
-      <script src="assets/js/jquery.easing.min.js"></script>
-      <script src="assets/js/scrolling-nav.js"></script>
+      <script src="/static/assets/js/jquery.easing.min.js"></script>
+      <script src="/static/assets/js/scrolling-nav.js"></script>
 
       <!-- Dropdown JS -->
-      <script src="assets/js/bootstrap-dropdown.js"></script>
-      <script src="assets/js/bootstrap-hover-dropdown.js"></script>
+      <script src="/static/assets/js/bootstrap-dropdown.js"></script>
+      <script src="/static/assets/js/bootstrap-hover-dropdown.js"></script>
 
       <script>$(function () { $("[data-toggle='popover']").popover(); }); 
       </script>
