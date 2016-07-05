@@ -1,15 +1,17 @@
 /*regular*/
 @font-face {
 	font-family: 'gaspar';
-	src: 
-	url('fonts/Gaspar_Regular.otf');
+	src: url('fonts/Gaspar_Regular.otf');
 }
 /*bold*/
 @font-face {
 	font-family: 'gaspar';
-	src: 
-	url('fonts/Gaspar_Bold.otf');
+	src: url('fonts/Gaspar_Bold.otf');
 	font-weight: bold;
+}
+
+.gaspar-font {
+	font-family: "gaspar", Arial, serif;
 }
 
 .quote{
