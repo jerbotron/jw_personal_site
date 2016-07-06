@@ -1,1180 +1,1262 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
 
-    <title>Jeremy Wang</title>
+<title>Jeremy Wang</title>
 
-    <!-- Style Links -->
-    <link href="/static/assets/css/bootstrap.css" rel="stylesheet">
-    <link href="/static/assets/css/bootstrap-theme.css" rel="stylesheet">
-    <link href="/static/assets/css/custom.css" rel="stylesheet">
-    <link href="/static/assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/static/assets/css/scrolling-nav.css" rel="stylesheet">
-    <style>
-    .jumbotron{
-      width: 100%;
-      font-family: "gaspar", Arial, serif;
-      min-height: 300px;
-      max-height: 775px;
-      margin-bottom: 0px;
-    }
-    #batman{
-      background: url("/static/assets/images/jumbotron_batman.jpg") right -250px;
-      padding-top: 200px;
-      padding-bottom: 175px;
-    }
-    #wolverine{
-      background: url("/static/assets/images/jumbotron_wolverine.jpg") right -475px;
-      padding-bottom: 50px;
-    }
-    #hulk {
-      background: url("/static/assets/images/jumbotron_hulk.jpg") right -400px;
-      padding-bottom: 25px;
-    }
-    #ironman {
-      background: url("/static/assets/images/jumbotron_ironman.jpg") right -500px;
-    }
-    .jumbotron h1,
-    .jumbotron .h1 {
-      font-size: 110px;
-      font-weight: bold;
-    }
-    .navbar{
-      margin-bottom: 0px;
-    }
-    .btn-primary{
-      color: white;
-    }
-    .nav-header{
-      padding-left: 15px;
-      font-size: 12px;
-    }
-    .nav-dropdown{
-      font-size: 12px;
-    }
-    .dropdown-menu .divider{
-      background-color: gray;
-    }
-    .white-font {
-      color: white;
-    }
-    .thumbnail {
-      position:relative;
-      overflow:hidden;
-    }
-    .caption {
-      position:absolute;
-      top:0;
-      right:0;
-      background:rgba(90, 90, 90, 0.75);
-      width:100%;
-      height:100%;
-      padding:2%;
-      display: none;
-      text-align: left;
-      color:#fff !important;
-      z-index:2;
-    }
-    .carousel{
-      border-style: groove;
-      border-width: thick;
-      border-color: white;
-    }
-    .progress{
-      margin-bottom: 0px;
-    }
-    .info-body {
-      padding-top: 50px;
-    }
-    </style>
-    </head>
+<!-- Style Links -->
+<link href="/static/assets/css/bootstrap.css" rel="stylesheet">
+<link href="/static/assets/css/bootstrap-theme.css" rel="stylesheet">
+<link href="/static/assets/css/custom.css" rel="stylesheet">
+<link href="/static/assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="/static/assets/css/scrolling-nav.css" rel="stylesheet">
+<style>
+.jumbotron{
+  width: 100%;
+  font-family: "gaspar", Arial, serif;
+  min-height: 300px;
+  max-height: 775px;
+  margin-bottom: 0px;
+}
+#batman{
+  background: url("/static/assets/images/jumbotron_batman.jpg") right -250px;
+  padding-top: 200px;
+  padding-bottom: 175px;
+}
+#wolverine{
+  background: url("/static/assets/images/jumbotron_wolverine.jpg") right -475px;
+  padding-bottom: 50px;
+}
+#hulk {
+  background: url("/static/assets/images/jumbotron_hulk.jpg") right -400px;
+  padding-bottom: 25px;
+}
+#ironman {
+  background: url("/static/assets/images/jumbotron_ironman.jpg") right -500px;
+}
+.jumbotron h1,
+.jumbotron .h1 {
+  font-size: 110px;
+  font-weight: bold;
+}
+.navbar{
+  margin-bottom: 0px;
+}
+.btn-primary{
+  color: white;
+}
+.nav-header{
+  padding-left: 15px;
+  font-size: 12px;
+}
+.nav-dropdown{
+  font-size: 12px;
+}
+.dropdown-menu .divider{
+  background-color: gray;
+}
+.white-font {
+  color: white;
+}
+.thumbnail {
+  position:relative;
+  overflow:hidden;
+}
+.caption {
+  position:absolute;
+  top:0;
+  right:0;
+  background:rgba(90, 90, 90, 0.75);
+  width:100%;
+  height:100%;
+  padding:2%;
+  display: none;
+  text-align: left;
+  color:#fff !important;
+  z-index:2;
+}
+.carousel{
+  border-style: groove;
+  border-width: thick;
+  border-color: white;
+}
+.progress{
+  margin-bottom: 0px;
+}
+.info-body {
+  padding-top: 50px;
+}
+</style>
+</head>
 
-    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-      <!-- Navigation -->
-      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-          <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            </button>
-            <a class="navbar-brand page-scroll" href="#page-top"><b>JW</b></a>
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        </button>
+        <a class="navbar-brand page-scroll" href="#page-top"><b>JW</b></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <a class="page-scroll" data-hover="dropdown" href="#page-top">Home</a>
+          </li>
+
+          <li>
+            <a class="dropdown-toggle page-scroll" data-hover="dropdown" href="#about">Bio<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li class="nav-dropdown"><a class="page-scroll" href="#about">about me</a></li>
+              <li class="nav-dropdown"><a class="page-scroll" href="#skillset">skillset</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a class="dropdown-toggle page-scroll" data-hover="dropdown" href="#education">Education<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li class="nav-dropdown"><a class="page-scroll" href="#awards">awards</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a class="dropdown-toggle page-scroll" data-hover="dropdown" href="#experience">Experience<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li class="nav-dropdown"><a class="page-scroll" href="#ni">National Instruments</a></li>
+              <li class="nav-dropdown"><a class="page-scroll" href="#lumotune">Lumotune</a></li>
+              <li class="nav-dropdown"><a class="page-scroll" href="#ims">IMS</a></li>
+              <li class="nav-dropdown"><a class="page-scroll" href="#zspace">zSpace</a></li>
+              <li class="nav-dropdown"><a class="page-scroll" href="#ignis">IGNIS Innovation</a></li>
+              <li class="nav-dropdown"><a class="page-scroll" href="#pck">PCK Inc</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a class="page-scroll"  data-hover="dropdown" href="#portfolio">Portfolio</a>
+          </li>
+
+          <li class="dropdown">
+            <a class="dropdown-toggle page-scroll" href="#contact" data-hover="dropdown">Contact<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li class="nav-dropdown"><a class="page-scroll" href="#contact"><i class="fa fa-edit"></i> Leave a Message</a></li>
+              <li class="nav-dropdown"><a href="mailto:jy7wang@uwaterloo.ca" target="new"><i class="fa fa-envelope"></i> wyjeremy@gmail.com</a></li>
+              <li class="divider"></li>
+              <li class="nav-header"><b>Social Media</b></li>
+              <li class="nav-dropdown"><a href="https://github.com/jerbotron" target="new"><i class="fa fa-github-square"></i> Github</a></li>
+              <li class="nav-dropdown"><a href="https://ca.linkedin.com/pub/jeremy-wang/38/b95/153" target="new"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
+              <li class="nav-dropdown"><a href="https://www.facebook.com/jeremy.wang.3990" target="new"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+              <li class="nav-dropdown"><a href="http://instagram.com/jereremy22" target="new"><i class="fa fa-instagram"></i> Instagram</a></li>
+            </ul>
+          </li>
+          <form class="navbar-form navbar-left" role="navigation">
+            <a class="btn btn-info btn-sm" aria-label="Left Align" href="/static/coop/resume.pdf" target="_blank">
+              <span class="glyphicon glyphicon-print" aria-hidden="true"></span> View Printable Resume 
+            </a>
+          </form>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+   <!-- LANDING PAGE -->
+  <section id="intro">
+    <div class="jumbotron" id="batman"> 
+      <div class="container"> 
+
+        <div class = "col-md-8 white-font"> 
+          <h1><center>Hi, I'm Jeremy</center></h1>
+          <p>
+            <font size="7">
+              <center>I'm an</br>
+                engineer | entrepreneur | <b>doer</b>
+              </center>
+            </font>
+          </p> 
+          <p class="quote" style="padding-top:50px">
+            "The measure of who we are is what we do with what we have."
+            <i>- Vince Lombardi</i>
+          </p>
+        </div> 
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUTE ME -->
+  <section id="about" class="info-body">
+    <div class="container">
+      <div class="bio">
+        <h1><center>Bio</center></h1>
+        <hr class="style-two">
+        <div class="col-lg-4">
+          <h2>about me</h2>
+          <p>I can best describe myself as a <b>doer</b> with impeccable will power to solve problems and get things done.</p>
+          <p>
+            I have a versatile background in Mechatronics Engineering where I studied a combination of mechanical, electrical and software topics. I have 3 years of work experience under my belt - 2 of which are from internships ranging from software to hardware roles and everything in between and 1 year of full-time software engineering experience on developing cross-platform FPGA drivers.
+          </p>
+          <p>
+            Upon graduation, I discovered my passion to code. Aside from work, I stay busy with various side projects that include building web apps, Arduino/Raspberry Pi projects and mobile Android apps.
+          </p>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="profileImg">
+            <img src="/static/assets/images/profile.jpg" alt="Jeremy Wang" width="200" height="200">
           </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-              <li>
-                <a class="page-scroll" data-hover="dropdown" href="#page-top">Home</a>
-              </li>
-
-              <li>
-                <!-- <a class="page-scroll" data-hover="dropdown" href="#about">Bio</a> -->
-                <a class="dropdown-toggle page-scroll" data-hover="dropdown" href="#about">Bio<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li class="nav-dropdown"><a class="page-scroll" href="#about">about me</a></li>
-                  <li class="nav-dropdown"><a class="page-scroll" href="#skillset">skillset</a></li>
-                </ul>
-              </li>
-
-              <li>
-                <a class="page-scroll"  data-hover="dropdown" href="#education">Education</a>
-              </li>
-
-              <li>
-                <a class="page-scroll"  data-hover="dropdown" href="#experience">Experience</a>
-              </li>
-
-              <li>
-                <a class="page-scroll"  data-hover="dropdown" href="#portfolio">Portfolio</a>
-              </li>
-
-              <li class="dropdown">
-                <a class="dropdown-toggle" data-hover="dropdown">Contact<b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li class="nav-dropdown"><a class="page-scroll" href="#contact"><i class="fa fa-edit"></i> Leave a Message</a></li>
-                  <li class="nav-dropdown"><a href="mailto:jy7wang@uwaterloo.ca" target="new"><i class="fa fa-envelope"></i> wyjeremy@gmail.com</a></li>
-                  <li class="divider"></li>
-                  <li class="nav-header"><b>Social Media</b></li>
-                  <li class="nav-dropdown"><a href="https://ca.linkedin.com/pub/jeremy-wang/38/b95/153" target="new"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
-                  <li class="nav-dropdown"><a href="https://www.facebook.com/jeremy.wang.3990" target="new"><i class="fa fa-facebook-square"></i> Facebook</a></li>
-                  <li class="nav-dropdown"><a href="https://twitter.com/thejerbotron" target="new"><i class="fa fa-twitter-square"></i> Twitter</a></li>
-                  <li class="nav-dropdown"><a href="http://instagram.com/jereremy22" target="new"><i class="fa fa-instagram"></i> Instagram</a></li>
-                </ul>
-              </li>
-              <form class="navbar-form navbar-left" role="navigation">
-                <a class="btn btn-info btn-sm" aria-label="Left Align" href="/static/coop/resume.pdf" target="_blank">
-                  <span class="glyphicon glyphicon-print" aria-hidden="true"></span> View Printable Resume 
-                </a>
-              </form>
+          <div class="row" style="margin-top: 20px">
+            <ul class="list-inline text-center">
+              <li><a target="new" href="https://www.facebook.com/jeremy.wang.3990" class="btn btn-lg" style="color: black"><i class="fa fa-facebook"></i></a></li>
+              <li><a target="new" href="https://github.com/jerbotron" class="btn btn-lg" style="color: black"><i class="fa fa-github"></i></a></li>
+              <li><a target="new" href="https://ca.linkedin.com/pub/jeremy-wang/38/b95/153" class="btn btn-lg" style="color: black"><i class="fa fa-linkedin"></i></a></li>
+              <li><a target="new" href="http://instagram.com/jereremy22" class="btn btn-lg" style="color: black"><i class="fa fa-instagram"></i></a></li>
             </ul>
           </div>
-          <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
-      </nav>
 
-       <!-- LANDING PAGE -->
-      <section id="intro">
-        <div class="jumbotron" id="batman"> 
-          <div class="container"> 
-
-            <div class = "col-md-8 white-font"> 
-              <h1><center>Hi, I'm Jeremy</center></h1>
-              <p>
-                <font size="7">
-                  <center>I'm an</br>
-                    engineer | entrepreneur | <b>doer</b>
-                  </center>
-                </font>
-              </p> 
-              <p class="quote" style="padding-top:50px">
-                "The measure of who we are is what we do with what we have."
-                <i>- Vince Lombardi</i>
-              </p>
-            </div> 
-          </div>
+        <div class="col-lg-4">
+          <h2>details</h2>
+          <h4><b>name</b></h4>
+          <p>Jeremy Wang</p>
+          <h4><b>age</b></h4>
+          <p>23 years</p>
+          <h4><b>education</b></h4>
+          <p>Mechatronics Engineering,<br/>University of Waterloo</p>
+          <h4><b>location</b></h4>
+          <p>Austin, TX, USA</p>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <!-- ABOUTE ME -->
-      <section id="about" class="info-body">
-        <div class="container">
-          <div class="bio">
-            <h1><center>Bio</center></h1>
-            <hr class="style-two">
-            <div class="col-lg-4">
-              <h2>about me</h2>
-              <p>I can best describe myself as a <b>doer</b> with impeccable will power to solve problems and get things done.</p>
-              <p>
-                I have a versatile background in Mechatronics Engineering where I studied a combination of mechanical, electrical and software topics. I have 3 years of work experience under my belt - 2 of which are from internships ranging from software to hardware roles and everything in between and 1 year of full-time software engineering experience on developing cross-platform FPGA drivers.
-              </p>
-              <p>
-                Upon graduation, I discovered my passion to code. Aside from work, I stay busy with various side projects that include building web apps, Arduino/Raspberry Pi projects and mobile Android apps.
-              </p>
-            </div>
+<section id="skillset" class="info-body">
+  <div class="container">
+    <h1><center>Skillset</center></h1>
+    <hr class="style-two">
+    <div class="col-md-6">
+      <div class="panel panel-primary">
+        <div class="panel-heading"><span class="panel-title white-font">skills I use daily:</span></div>
+        <table class="table table-striped table-bordered table-condensed">
+          <thead>
+            <tr>
+              <th width="25%">Name</th>
+              <th width="65%">Proficiency</th>
+              <th width="10%">Years</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>C++</td>
+              <td>
+                <div class="progress" style="margin-bottom=0px">
+                  <div class="progress-bar progress-bar-info" style="width:80%;">
+                  </div>
+                </div>
+              </td>
+              <td align="center">2</td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>
+                <div class="progress" style="margin-bottom=0px">
+                  <div class="progress-bar progress-bar-info" style="width:95%;">
+                  </div>
+                </div>
+              </td>
+              <td align="center">6</td>
+            </tr>
+            <tr>
+              <td>Java</td>
+              <td>
+                <div class="progress" style="margin-bottom=0px">
+                  <div class="progress-bar progress-bar-info" style="width:70%;">
+                  </div>
+                </div>
+              </td>
+              <td align="center">4</td>
+            </tr>
+            <tr>
+              <td>HTML/CSS</td>
+              <td>
+                <div class="progress" style="margin-bottom=0px">
+                  <div class="progress-bar progress-bar-info" style="width:70%;">
+                  </div>
+                </div>
+              </td>
+              <td align="center">4</td>
+            </tr>
+            <tr>
+              <td>Amazon Web Services</td>
+              <td>
+                <div class="progress" style="margin-bottom=0px">
+                  <div class="progress-bar progress-bar-success" style="width:70%;">
+                  </div>
+                </div>
+              </td>
+              <td align="center">1</td>
+            </tr>
+            <tr>
+              <td>Google Firebase</td>
+              <td>
+                <div class="progress" style="margin-bottom=0px">
+                  <div class="progress-bar progress-bar-success" style="width:60%;">
+                  </div>
+                </div>
+              </td>
+              <td align="center">1</td>
+            </tr>
+            <tr>
+              <td>Python Flask</td>
+              <td>
+                <div class="progress" style="margin-bottom=0px">
+                  <div class="progress-bar progress-bar-success" style="width:65%;">
+                  </div>
+                </div>
+              </td>
+              <td align="center">1</td>
+            </tr>
+            <tr>
+              <td>RESTful API</td>
+              <td>
+                <div class="progress" style="margin-bottom=0px">
+                  <div class="progress-bar progress-bar-success" style="width:60%;">
+                  </div>
+                </div>
+              </td>
+              <td align="center">1</td>
+            </tr>
+            <tr>
+              <td>Android SDK</td>
+              <td>
+                <div class="progress" style="margin-bottom=0px">
+                  <div class="progress-bar progress-bar-success" style="width:70%;">
+                  </div>
+                </div>
+              </td>
+              <td align="center">1</td>
+            </tr>
+            <tr>
+              <td>Android Studio</td>
+              <td>
+                <div class="progress" style="margin-bottom=0px">
+                  <div class="progress-bar progress-bar-warning" style="width:80%;">
+                  </div>
+                </div>
+              </td>
+              <td align="center">1</td>
+            </tr>
+            <tr>
+              <td>WinDBG</td>
+              <td>
+                <div class="progress" style="margin-bottom=0px">
+                  <div class="progress-bar progress-bar-warning" style="width:75%;">
+                  </div>
+                </div>
+              </td>
+              <td align="center">1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="panel panel-primary">
+        <div class="panel-heading"><span class="panel-title white-font">skills I've used in the past:</span></div>
+        <table class="table table-striped table-bordered table-condensed">
+          <thead>
+            <tr>
+              <th width="25%">Name</th>
+              <th width="65%">Proficiency</th>
+              <th width="10%">Years</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>C</td>
+              <td>
+                <div class="progress" style="margin-bottom=0px">
+                  <div class="progress-bar progress-bar-info" style="width:60%;">
+                  </div>
+                </div>
+              </td>
+              <td align="center">2</td>
+            </tr>
+            <tr>
+              <td>C#</td>
+              <td>
+                <div class="progress" style="margin-bottom=0px">
+                  <div class="progress-bar progress-bar-info" style="width:70%;">
+                  </div>
+                </div>
+              </td>
+              <td align="center">3</td>
+            </tr>
+            <tr>
+              <td>Javascript</td>
+              <td>
+                <div class="progress" style="margin-bottom=0px">
+                  <div class="progress-bar progress-bar-info" style="width:65%;">
+                  </div>
+                </div>
+              </td>
+              <td align="center">2</td>
+            </tr>
+            <tr>
+              <td>Lua</td>
+              <td>
+                <div class="progress" style="margin-bottom=0px">
+                  <div class="progress-bar progress-bar-info" style="width:50%;">
+                  </div>
+                </div>
+              </td>
+              <td align="center">1</td>
+            </tr>
+            <tr>
+              <td>MATLAB</td>
+              <td>
+                <div class="progress" style="margin-bottom=0px">
+                  <div class="progress-bar progress-bar-info" style="width:90%;">
+                  </div>
+                </div>
+              </td>
+              <td align="center">5</td>
+            </tr>
+            <tr>
+              <td>Arduino/Raspberry Pi Prototyping</td>
+              <td>
+                <div class="progress" style="margin-bottom=0px">
+                  <div class="progress-bar progress-bar-warning" style="width:80%;">
+                  </div>
+                </div>
+              </td>
+              <td align="center">3</td>
+            </tr>
+            <tr>
+              <td>Visual Studio</td>
+              <td>
+                <div class="progress" style="margin-bottom=0px">
+                  <div class="progress-bar progress-bar-warning" style="width:85%;">
+                  </div>
+                </div>
+              </td>
+              <td align="center">2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="panel panel-primary">
+        <div class="panel-heading"><span class="panel-title white-font">other things I'm good at:</span></div>
+        <table class="table table-striped table-bordered table-condensed">
+          <tbody>
+            <tr>
+              <td>RTOS development, FPGAs, Linux/Windows kernel development/debugging, PCI/PCIe bus architecture, web/mobile apps</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <div class="col-lg-4">
-              <div class="profileImg">
-                <img src="/static/assets/images/profile.jpg" alt="Jeremy Wang" width="200" height="200">
-              </div>
-            </div>
-
-            <div class="col-lg-4">
-              <h2>details</h2>
-              <h4><b>name</b></h4>
-              <p>Jeremy Wang</p>
-              <h4><b>age</b></h4>
-              <p>23 years</p>
-              <h4><b>education</b></h4>
-              <p>Mechatronics Engineering,<br/>University of Waterloo</p>
-              <h4><b>location</b></h4>
-              <p>Austin, TX, USA</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    <section id="skillset" class="info-body">
-      <div class="container">
-        <h1><center>Skillset</center></h1>
-        <hr class="style-two">
-        <div class="col-md-6">
-          <div class="panel panel-info">
-            <div class="panel-heading"><span class="panel-title"><b>Skills I use daily:</b></span></div>
-            <table class="table table-striped table-bordered table-condensed">
-              <thead>
-                <tr>
-                  <th width="25%">Name</th>
-                  <th width="65%">Proficiency</th>
-                  <th width="10%">Years</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>C++</td>
-                  <td>
-                    <div class="progress" style="margin-bottom=0px">
-                      <div class="progress-bar progress-bar-info" style="width:80%;">
-                      </div>
-                    </div>
-                  </td>
-                  <td align="center">2</td>
-                </tr>
-                <tr>
-                  <td>Python</td>
-                  <td>
-                    <div class="progress" style="margin-bottom=0px">
-                      <div class="progress-bar progress-bar-info" style="width:95%;">
-                      </div>
-                    </div>
-                  </td>
-                  <td align="center">6</td>
-                </tr>
-                <tr>
-                  <td>Java</td>
-                  <td>
-                    <div class="progress" style="margin-bottom=0px">
-                      <div class="progress-bar progress-bar-info" style="width:70%;">
-                      </div>
-                    </div>
-                  </td>
-                  <td align="center">4</td>
-                </tr>
-                <tr>
-                  <td>HTML/CSS</td>
-                  <td>
-                    <div class="progress" style="margin-bottom=0px">
-                      <div class="progress-bar progress-bar-info" style="width:70%;">
-                      </div>
-                    </div>
-                  </td>
-                  <td align="center">4</td>
-                </tr>
-                <tr>
-                  <td>Amazon Web Services</td>
-                  <td>
-                    <div class="progress" style="margin-bottom=0px">
-                      <div class="progress-bar progress-bar-success" style="width:70%;">
-                      </div>
-                    </div>
-                  </td>
-                  <td align="center">1</td>
-                </tr>
-                <tr>
-                  <td>Google Firebase</td>
-                  <td>
-                    <div class="progress" style="margin-bottom=0px">
-                      <div class="progress-bar progress-bar-success" style="width:60%;">
-                      </div>
-                    </div>
-                  </td>
-                  <td align="center">1</td>
-                </tr>
-                <tr>
-                  <td>Python Flask</td>
-                  <td>
-                    <div class="progress" style="margin-bottom=0px">
-                      <div class="progress-bar progress-bar-success" style="width:65%;">
-                      </div>
-                    </div>
-                  </td>
-                  <td align="center">1</td>
-                </tr>
-                <tr>
-                  <td>RESTful API</td>
-                  <td>
-                    <div class="progress" style="margin-bottom=0px">
-                      <div class="progress-bar progress-bar-success" style="width:60%;">
-                      </div>
-                    </div>
-                  </td>
-                  <td align="center">1</td>
-                </tr>
-                <tr>
-                  <td>Android SDK /Android Studio</td>
-                  <td>
-                    <div class="progress" style="margin-bottom=0px">
-                      <div class="progress-bar progress-bar-warning" style="width:80%;">
-                      </div>
-                    </div>
-                  </td>
-                  <td align="center">1</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="panel panel-warning">
-            <div class="panel-heading"><span class="panel-title"><b>Skills I've used in the past:</b></span></div>
-            <table class="table table-striped table-bordered table-condensed">
-              <thead>
-                <tr>
-                  <th width="25%">Name</th>
-                  <th width="65%">Proficiency</th>
-                  <th width="10%">Years</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>C</td>
-                  <td>
-                    <div class="progress" style="margin-bottom=0px">
-                      <div class="progress-bar progress-bar-info" style="width:60%;">
-                      </div>
-                    </div>
-                  </td>
-                  <td align="center">2</td>
-                </tr>
-                <tr>
-                  <td>C#</td>
-                  <td>
-                    <div class="progress" style="margin-bottom=0px">
-                      <div class="progress-bar progress-bar-info" style="width:70%;">
-                      </div>
-                    </div>
-                  </td>
-                  <td align="center">3</td>
-                </tr>
-                <tr>
-                  <td>Javascript</td>
-                  <td>
-                    <div class="progress" style="margin-bottom=0px">
-                      <div class="progress-bar progress-bar-info" style="width:65%;">
-                      </div>
-                    </div>
-                  </td>
-                  <td align="center">2</td>
-                </tr>
-                <tr>
-                  <td>Lua</td>
-                  <td>
-                    <div class="progress" style="margin-bottom=0px">
-                      <div class="progress-bar progress-bar-info" style="width:50%;">
-                      </div>
-                    </div>
-                  </td>
-                  <td align="center">1</td>
-                </tr>
-                <tr>
-                  <td>MATLAB</td>
-                  <td>
-                    <div class="progress" style="margin-bottom=0px">
-                      <div class="progress-bar progress-bar-info" style="width:90%;">
-                      </div>
-                    </div>
-                  </td>
-                  <td align="center">5</td>
-                </tr>
-                <tr>
-                  <td>Arduino/Raspberry Pi Prototyping</td>
-                  <td>
-                    <div class="progress" style="margin-bottom=0px">
-                      <div class="progress-bar progress-bar-warning" style="width:80%;">
-                      </div>
-                    </div>
-                  </td>
-                  <td align="center">3</td>
-                </tr>
-                <tr>
-                  <td>Visual Studio</td>
-                  <td>
-                    <div class="progress" style="margin-bottom=0px">
-                      <div class="progress-bar progress-bar-warning" style="width:85%;">
-                      </div>
-                    </div>
-                  </td>
-                  <td align="center">2</td>
-                </tr>
-              </tbody>
-            </table>
+  <!-- EDUCATION -->
+  <section id="education" class="info-body">
+    <div class="jumbotron" id="wolverine"> 
+      <div class="container"> 
+        <div class="col-md-12">
+          <h1>EDUCATION</h1>
+          <p class="quote">
+            "An investment in knowledge pays the best interest."
+            <i>- Benjamin Franklin</i>
+          </p>
+        </div> 
+        <div class="col-md-8" style="margin-top:20px"> 
+          <div class="well">
+            <p><b>BASc, Mechatronics Engineering | Class of '15 | University of Waterloo</b></p> 
+            <p>
+              Cumulative average upon graduation: <b>83%</b> - view <a href="/static/coop/transcript.pdf" target="_blank">transcript</a>.
+            </p>
+            <p>
+              On top of academics, I also played 3 years of varsity football as a walk-on and was a part of various campus clubs.
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-      <!-- EDUCATION -->
-      <section id="education" class="info-body">
-        <div class="jumbotron" id="wolverine"> 
-          <div class="container"> 
-            <div class="col-md-12">
-              <h1>EDUCATION</h1>
-              <p class="quote">
-                "An investment in knowledge pays the best interest."
-                <i>- Benjamin Franklin</i>
-              </p>
-            </div> 
-            <div class="col-md-8" style="margin-top:20px"> 
-              <div class="well">
-                <p><b>BASc, Mechatronics Engineering | Class of '15 | University of Waterloo</b></p> 
-                <p>
-                  Cumulative average upon graduation: <b>83%</b> - view <a href="/static/coop/transcript.pdf" target="_blank">transcript</a>.
-                </p>
-                <p>
-                  On top of academics, I also played 3 years of varsity football as a walk-on and was a part of various campus clubs.
-                </p>
-              </div>
-            </div>
+  <!-- AWARDS SECTION -->
+  <section id="awards" class="info-body">
+    <div class="container">
+      <h1><center>Awards</center></h1>
+      <hr class="style-two">
+      <div class="panel panel-default">
+        <table class="table table-striped table-bordered table-condensed">
+          <thead>
+            <tr class="info">
+              <th>Name</th>
+              <th>Organization</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Academic All-Canadian</td>
+              <td><a href="http://english.cis-sic.ca/landing/index" target="new">Canadian Interuniversity Sport (CIS)</a></td>
+              <td>Sept 2014</td>
+            </tr>
+            <tr>
+              <td>Undergraduate Student Research Award</td>
+              <td><a href="http://www.nserc-crsng.gc.ca/Students-Etudiants/UG-PC/USRA-BRPC_eng.asp" target="new">
+                Natural Sciences and Engineering Research Council (NSERC) of Canada</a></td>
+                <td>Apr 2014</td>
+              </tr>
+              <tr>
+                <td>Queen Elizabeth II Aiming for the Top Scholarship</td>
+                <td><a href="http://www.ontario.ca/education-and-training/osap-ontario-student-assistance-program" target="new">
+                  Ontario Student Assistance Program (OSAP)</a></td>
+                  <td>Sept 2010 - Sept 2015</td>
+                </tr>
+                <tr>
+                  <td>President's Scholarship</td>
+                  <td><a href="https://uwaterloo.ca/" target="new">University of Waterloo</a></td>
+                  <td>Sept 2010</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
 
-      <!-- AWARDS SECTION -->
-      <section id="awards" class="info-body">
-        <div class="container">
-          <h1><center>Awards</center></h1>
-          <hr class="style-two">
-          <div class="panel panel-default">
-            <table class="table table-striped table-bordered table-condensed">
-              <thead>
-                <tr class="info">
-                  <th>Name</th>
-                  <th>Organization</th>
-                  <th>Date</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Academic All-Canadian</td>
-                  <td><a href="http://english.cis-sic.ca/landing/index" target="new">Canadian Interuniversity Sport (CIS)</a></td>
-                  <td>Sept 2014</td>
-                </tr>
-                <tr>
-                  <td>Undergraduate Student Research Award</td>
-                  <td><a href="http://www.nserc-crsng.gc.ca/Students-Etudiants/UG-PC/USRA-BRPC_eng.asp" target="new">
-                    Natural Sciences and Engineering Research Council (NSERC) of Canada</a></td>
-                    <td>Apr 2014</td>
-                  </tr>
-                  <tr>
-                    <td>Queen Elizabeth II Aiming for the Top Scholarship</td>
-                    <td><a href="http://www.ontario.ca/education-and-training/osap-ontario-student-assistance-program" target="new">
-                      Ontario Student Assistance Program (OSAP)</a></td>
-                      <td>Sept 2010 - Sept 2015</td>
-                    </tr>
-                    <tr>
-                      <td>President's Scholarship</td>
-                      <td><a href="https://uwaterloo.ca/" target="new">University of Waterloo</a></td>
-                      <td>Sept 2010</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </section>
-
-      <!-- EXPERIENCE -->
-      <section id="experience" class="info-body">
-        <div class="jumbotron" id="hulk"> 
-          <div class="container"> 
-            <div class="col-md-12 white-font"> 
-              <h1>EXPERIENCE</h1>
-              <p class="quote">
-                "An investment in knowledge pays the best interest"
-                <i>- Benjamin Franklin</i>
+  <!-- EXPERIENCE -->
+  <section id="experience" class="info-body">
+    <div class="jumbotron" id="hulk"> 
+      <div class="container"> 
+        <div class="col-md-12 white-font"> 
+          <h1>EXPERIENCE</h1>
+          <p class="quote">
+            "An investment in knowledge pays the best interest"
+            <i>- Benjamin Franklin</i>
+          </p>
+        </div>
+        <div class="col-md-8" style="margin-top:20px"> 
+            <div class="well">
+              <p>
+                I've worked full-time at:
               </p>
-            </div>
-            <div class="col-md-8" style="margin-top:20px"> 
-                <div class="well">
-                  <p>
-                    I've worked full-time at:
-                  </p>
-                  <div class="row">
-                    <div class="col-xs-6 col-md-3">
-                      <a href="#ni" class="thumbnail">
-                        <img src="/static/assets/images/ni_logo.png" alt="National Instruments">
-                      </a>
-                    </div>
-                  </div>
-                  <p>
-                    I've interned at:
-                  </p>
-                  <div class="row">
-                    <div class="col-xs-4 col-md-2">
-                      <a href="#lumotune" class="thumbnail">
-                        <img src="/static/assets/images/lumotune_logo.png" alt="Lumotune">
-                      </a>
-                    </div>
-                    <div class="col-xs-4 col-md-2">
-                      <a href="#ims" class="thumbnail">
-                        <img src="/static/assets/images/ims_logo.png" alt="IMS">
-                      </a>
-                    </div>
-                    <div class="col-xs-4 col-md-2">
-                      <a href="#" class="thumbnail">
-                        <img src="/static/assets/images/zspace_logo.png" alt="zSpace">
-                      </a>
-                    </div>
-                    <div class="col-xs-4 col-md-2">
-                      <a href="#" class="thumbnail">
-                        <img src="/static/assets/images/ignis_logo.png" alt="IGNIS">
-                      </a>
-                    </div>
-                    <div class="col-xs-4 col-md-2">
-                      <a href="#" class="thumbnail">
-                        <img src="/static/assets/images/pck_logo.png" alt="PCK">
-                      </a>
-                    </div>
-                  </div>
+              <div class="row">
+                <div class="col-xs-6 col-md-3">
+                  <a href="#ni" class="thumbnail">
+                    <img src="/static/assets/images/ni_logo.png" alt="National Instruments">
+                  </a>
                 </div>
-            </div>  
-          </div>
-        </div>
-      </section>
-
-      <section id="lumotune">
-        <div class="container">
-          <h1 style="margin-top:75px">
-            <b>Hardware Design Engineer</b> <small>Lumotune, Waterloo, ON, Canada</small>
-            <span class="alignright">
-              <a href="http://lumotune.com/" target="new">
-                <img src="/static/assets/images/lumotune_logo.png" alt="Lumotune" width="145" height="80">
-              </a>
-            </span>
-          </h1>
-          <h4>May 2014 - Aug 2014</h4>
-          <hr class="style-three">
-          <div class="row">
-            <div class="col-md-6">
-              <font size="5">Overview</font>
+              </div>
               <p>
-                Lumotune was my latest and most involved internship experience. On a team of only 7 people, each member carried significant responsibilities in their respective roles. My role as the hardware designer involved designing an innovative high voltage, high frequency display driver from the ground up. Working under the supervisor of my hardware lead, I was in charge of the entire project development from simulation, to breadboard prototyping, to cycles of performance testing and debugging, to final schematic capture and PCB layout and finally bringing the product to life. Samples of the projects I worked on can be seen <a href="https://www.youtube.com/watch?v=WtGe42dWaf4" target="new">here</a> and <a href="http://youtu.be/BF8OGtP8cEI" target="new">here</a>.
+                I've interned at:
               </p>
-              <font size="5">Skills Acquired</font>
-              <ul>              
-                <li>Knowledge of LCD material science and Active vs. Passive Matrix display driver technology</li>
-                <li>Experience in hardware component selection, circuit prototyping and PCB ordering/assembly</li>
-                <li>Schematic Capture and PCB Layout experience of complex circuits up to 1000 components in Cad EAGLE</li>
-                <li>Experience using LTSpice, PSpice and PSIM circuit simulation softwares</li>
-                <li>Experience using Electric Imp platform and Squirrel programming language</li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <font size="5">Evaluation: 
-                <a href="coop/eval_lumotune.pdf" target="new"><b>Outstanding</b></a>
-              </font>
-              <blockquote>
-                <font size="2">
-                  <p>
-                    Jeremy has been an integral part of the team here at Lumotune and his work and contribution has been substantial in advancing the projects he worked on in the company. Furthermore his aptitude for learning and improving his knowledge and skills has been shown through his hardworking nature. His work on designing our next generation display drivers has been monumental and we would not be close to where we are without his help.
-                    The main strengths I was able to observe in the past couple of months:
-                    <ul>
-                      <li>Enthusiasm and self improvement: Throughout the work term, Jeremy has shown that he is always eager to learn new things. This ranged from circuit theory, to optimal soldering techniques, to layout design. He also responds very well to feedback given throughout the term and has consistently improved his understanding of hardware and circuit theory and has grown substantially throughout the term. </li>
-                      <li>Work Ethic: Tying in to the above, Jeremy is very hard working and dedicated towards his work. In order to meet deadlines, he was willing to stay very late many days in order to provide quality work on schedule. This work ethic is also one of the driving factors behind his self-improvement throughout the term.</li>
-                      <li>Quality of Work: Jeremy consistently provides work that is at the best of his ability and will always make sure that the work he submits is up to par. Out of all the traits, this is the most unique since most students I have encountered will submit work that meets the requirements, rather than actually trying to achieve the best possible.</li>
-                    </ul> 
-                  </p>
-                  <p>
-                    Jeremy has been an Outstanding member of the team and I wish him all the best in whatever chooses to pursue.</p>
-                    <font size="4"><small>Aman Muthreja, Hardware Lead, Lumotune</small></font>
-                  </font>
-                </blockquote>
+              <div class="row">
+                <div class="col-xs-4 col-md-2">
+                  <a href="#lumotune" class="thumbnail">
+                    <img src="/static/assets/images/lumotune_logo.png" alt="Lumotune">
+                  </a>
+                </div>
+                <div class="col-xs-4 col-md-2">
+                  <a href="#ims" class="thumbnail">
+                    <img src="/static/assets/images/ims_logo.png" alt="IMS">
+                  </a>
+                </div>
+                <div class="col-xs-4 col-md-2">
+                  <a href="#zspace" class="thumbnail">
+                    <img src="/static/assets/images/zspace_logo.png" alt="zSpace">
+                  </a>
+                </div>
+                <div class="col-xs-4 col-md-2">
+                  <a href="#ignis" class="thumbnail">
+                    <img src="/static/assets/images/ignis_logo.png" alt="IGNIS">
+                  </a>
+                </div>
+                <div class="col-xs-4 col-md-2">
+                  <a href="#pck" class="thumbnail">
+                    <img src="/static/assets/images/pck_logo.png" alt="PCK">
+                  </a>
+                </div>
               </div>
             </div>
-      </section>
+        </div>  
+      </div>
+    </div>
+  </section>
 
-      <section id="ims">
-        <div class="container">
-          <h1 style="margin-top:100px">
-            <b>Software Engineer</b> <small>Intelligent Mechatronics Systems (IMS), Waterloo, ON, Canada</small>
-            <span class="alignright">
-              <a href="http://www.intellimec.com/" target="new">
-                <img src="/static/assets/images/ims_logo.png" alt="IMS" width="145" height="80">
-              </a>
-            </span>
-          </h1>
-          <h4>Sept 2013 - Dec 2013</h4>
-          <hr class="style-three">
-          <div class="row">
-            <div class="col-md-6">
-              <font size="5">Overview</font>
+  <section id="ni" class="info-body">
+    <div class="container">
+      <h1>
+        <b>Software Engineer</b> <small>National Instruments, Austin, TX, USA</small>
+        <span class="alignright">
+          <a href="http://lumotune.com/" target="new">
+            <img src="/static/assets/images/ni_logo.png" alt="Lumotune">
+          </a>
+        </span>
+      </h1>
+      <h4>Aug 2015 - present</h4>
+      <hr class="style-three">
+      <div class="row">
+        <div class="col-md-6">
+          <font size="5">Overview</font>
+          <p>
+            FILL ME IN 
+          </p>
+          <font size="5">Skills Acquired</font>
+          <ul>              
+            <li>Put stuff here</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="lumotune" class="info-body">
+    <div class="container">
+      <h1>
+        <b>Hardware Design Engineer</b> <small>Lumotune, Waterloo, ON, Canada</small>
+        <span class="alignright">
+          <a href="http://lumotune.com/" target="new">
+            <img src="/static/assets/images/lumotune_logo.png" alt="Lumotune">
+          </a>
+        </span>
+      </h1>
+      <h4>May 2014 - Aug 2014</h4>
+      <hr class="style-three">
+      <div class="row">
+        <div class="col-md-6">
+          <font size="5">Overview</font>
+          <p>
+            Lumotune was a start-up composed of only 7 people. My role as the hardware designer involved designing an innovative high voltage, high frequency display driver from the ground up. Working under the supervision of my hardware lead, I was in charge of the entire project development from simulation, to prototyping, to cycles of performance testing and debugging, to final schematic capture and PCB layout and finally bringing the product to life. Samples of the projects I worked on can be seen <a href="https://www.youtube.com/watch?v=WtGe42dWaf4" target="new">here</a> and <a href="http://youtu.be/BF8OGtP8cEI" target="new">here</a>.
+          </p>
+          <font size="5">Skills Acquired</font>
+          <ul>              
+            <li>Knowledge of LCD material science and active vs. passive matrix display driver technology</li>
+            <li>Experience in hardware component selection, circuit prototyping and PCB ordering/assembly</li>
+            <li>Schematic capture and PCB layout of complex circuits with up to 1000 components in Cad EAGLE</li>
+            <li>Circuit simulation in LTSpice, PSpice and PSIM</li>
+            <li>Writing tests on the Electric Imp platform and in Squirrel</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <font size="5">Evaluation: 
+            <a href="coop/eval_lumotune.pdf" target="new"><b>Outstanding</b></a>
+          </font>
+          <blockquote>
+            <font size="2">
               <p>
-                My time at IMS is the only pure software work experience out of all my internship experiences. I was exposed to an agile team developement  environment where daily standups were held to update the project status. My role at IMS involved software development and QA testing on its embedded mobile platforms, desktop clients and web servers. A majority of my term was spent on finding and fixing bugs both on the frontend and backend of the web platform. I found it challenging but satisfying to design creative, flawless solutions to complex testing problems. Moreover, IMS gave me an excellent experience in learning about web design, web architecture and how data is accessed across the internet.
-              </p>
-              <font size="5">Skills Acquired</font>
-              <ul>
-                <li>MVC client-server web architecture and backend database implementations</li>
-                <li>Testing and fixing bugs for a large scaled software project</li>
-                <li>Experience in writing SQL queries and scripts for database mining</li>
-                <li>Java, Javascript, HTML, JSP, CSS development</li>
-                <li>Experience using Eclipse IDE, Subversion and and JIRA project management software</li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <font size="5">Evaluation: 
-                <a href="coop/eval_ims.pdf" target="new"><b>Excellent</b></a>
-              </font>
-              <blockquote>
+                Jeremy has been an integral part of the team here at Lumotune and his work and contribution has been substantial in advancing the projects he worked on in the company. Furthermore his aptitude for learning and improving his knowledge and skills has been shown through his hardworking nature. His work on designing our next generation display drivers has been monumental and we would not be close to where we are without his help.
+                The main strengths I was able to observe in the past couple of months:
                 <ul>
-                  <li>Highly regarded by all members of the team</li>
-                  <li>Asks questions that show he is involved in the work</li>
-                  <li>Has done some development and development support</li>
-                  <li>Both quality / quantity were great</li>
-                </ul>
-                <p>All in all, very happy with his work.</p>
-                <small>Tim Donkersgoed, Manager, Product Development Quality</small>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="zspace">
-        <div class="container">
-          <h1 style="margin-top:100px"><b>Display Engineer</b> <small>zSpace, Mountain View, California, USA</small>
-            <span class="alignright">
-              <a href="http://zspace.com/" target="new">
-                <img src="/static/assets/images/zspace_logo.png" alt="zSpace">
-              </a>
-            </span>
-          </h1>
-          <h4>Jan 2013 - Apr 2013</h4>
-          <hr class="style-three">
-          <div class="row">
-            <div class="col-md-6">
-              <font size="5">Overview</font>
+                  <li>Enthusiasm and self improvement: Throughout the work term, Jeremy has shown that he is always eager to learn new things. This ranged from circuit theory, to optimal soldering techniques, to layout design. He also responds very well to feedback given throughout the term and has consistently improved his understanding of hardware and circuit theory and has grown substantially throughout the term. </li>
+                  <li>Work Ethic: Tying in to the above, Jeremy is very hard working and dedicated towards his work. In order to meet deadlines, he was willing to stay very late many days in order to provide quality work on schedule. This work ethic is also one of the driving factors behind his self-improvement throughout the term.</li>
+                  <li>Quality of Work: Jeremy consistently provides work that is at the best of his ability and will always make sure that the work he submits is up to par. Out of all the traits, this is the most unique since most students I have encountered will submit work that meets the requirements, rather than actually trying to achieve the best possible.</li>
+                </ul> 
+              </p>
               <p>
-                I was hired as a display engineer to learn and understand display architecture so that I can help design and develop a display viewing angle measurement system to measure the performance of LCD displays. My training involved introduction to LCD display architecture including backlight, LCD optics, color theory, video scalar functioning and how display measurements are made. By the end of the term, I designed a fully automated viewing angle measurement system involving two stepper motors and a Konica Minolta Display Color Analayzer. I had full control of the project including the mechancial design, embedded and GUI software development. I later installed and implemented the automated viewing angle measurement system to the production line to help increase the production efficiency.      
-              </p>
-              <font size="5">Skills Acquired</font>
-              <ul>
-                <li>Knowledge of LCD architecture, color theory and 3D stereoscopics display technology</li>
-                <li>Embedded software development and interfacing with motor controllers and other peripherals</li>
-                <li>Software development and scripting experience in MATLAB, Java and C#</li>
-                <li>Experience in installing and training production workers of automation software</li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <font size="5">Evaluation: 
-                <a href="coop/eval_zspace.pdf" target="new"><b>Outstanding</b></a>
+                Jeremy has been an Outstanding member of the team and I wish him all the best in whatever chooses to pursue.</p>
+                <font size="4"><small>Aman Muthreja, Hardware Lead, Lumotune</small></font>
               </font>
-              <blockquote>
-                <p>
-                  Jeremy exceeded my expectations of how useful he would be to my team. I gave him a hard task as soon as he showed up, which involved getting new HW working, writing new SW to operate it, learning new measurement techniques for displays, and understanding enough of a sizable legacy SW code base to integrate his SW with it. He excelled at all of this.
-                </p>
-                <small>Mark Flynn, Director of Displays, zSpace</small>
-              </blockquote>
-            </div>
+            </blockquote>
           </div>
         </div>
-      </section>
+    </div>
+  </section>
 
-      <section id="ignis">
-        <div class="container">
-          <h1 style="margin-top:100px">
-            <b>Engineering Intern</b> <small>IGNIS Innovation, Waterloo, ON, Canada</small>
-            <span class="alignright">
-              <a href="http://www.ignisinnovation.com/" target="new">
-                <img src="/static/assets/images/ignis_logo.png" alt="IGNIS" witdh="131" height="64">
-              </a>
-            </span>
-          </h1>
-          <h4>May 2012 - Aug 2012</h4>
-          <hr class="style-three">
-          <div class="row">
-            <div class="col-md-6">
-              <font size="5">Overview</font>
-              <p>
-                I was hired as a software intern but quickly found myself working on a variety of software and hardware projects in a fast paced startup culture. At IGNIS, I was exposed to working in a real engineering R&D environment where I learned how to use lab instruments such as scopes and multimeters as well as valuable soldering techniques. I worked on a project that involved hacking a Canon scanner and designing an automated display measurement system using the Windows Image Acquisition (WIA) API in Python. Other projects I worked on included creating tests to validate and debug analog PCBs and other hardware and designing a frontend data parsing software in Visual C# .NET.
-              </p>
-              <font size="5">Skills Acquired</font>
-              <ul>
-                <li>Experience in working under constant pressure and in fast paced environments</li>
-                <li>Hands on hardware experience in soldering and using oscilloscopes, spectrum analyzers and DMMs</li>
-                <li>Software scripting and development in Python and Visual C#</li>
-                <li>Knowledge of AMOLED, LCD architecture and other display technology</li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <font size="5">Evaluation: 
-                <a href="coop/eval_ignis.pdf" target="new"><b>Excellent</b></a>
-              </font>
-              <blockquote>
-                <p>Jeremy is a fast learner who shows personal initiative to learn about op-amps in his work. He works extremely well with others, is humble and eager to understand more about work processes. He adapts quickly when switching between completely unrelated tasks, and fits well into a small company environment. While limited in experience, Jeremy has room for growth in creative problem solving by proposing novel solutions to existing problems and identifying opportunities for showing initiative towards higher-priority tasks. Overall very enthusiastic towards work.</p>
-                <small>J. Marcel Dionne, Director of Engineering, IGNIS Innovation</small>
-              </blockquote>
-            </div>
-          </div>
+  <section id="ims" class="info-body">
+    <div class="container">
+      <h1>
+        <b>Software Engineer</b> <small>Intelligent Mechatronics Systems (IMS), Waterloo, ON, Canada</small>
+        <span class="alignright">
+          <a href="http://www.intellimec.com/" target="new">
+            <img src="/static/assets/images/ims_logo.png" alt="IMS">
+          </a>
+        </span>
+      </h1>
+      <h4>Sept 2013 - Dec 2013</h4>
+      <hr class="style-three">
+      <div class="row">
+        <div class="col-md-6">
+          <font size="5">Overview</font>
+          <p>
+            At IMS, I worked in an agile development environment. My role involved software development and QA testing on its embedded mobile and web platforms. IMS gave me excellent experiences in web design, web architecture and how data is accessed across the internet.
+          </p>
+          <font size="5">Skills Acquired</font>
+          <ul>
+            <li>MVC client-server web architecture and backend database implementations</li>
+            <li>Software development/design experience in Java, Javascript, HTML/CSS</li>
+            <li>Softare testing/debugging for a large scaled software project</li>
+            <li>Writing SQL queries and scripts for database mining</li>
+            <li>Eclipse IDE, Subversion and JIRA project management software</li>
+          </ul>
         </div>
-      </section>
-
-      <section id="pck">
-        <div class="container">
-          <h1 style="margin-top:100px">
-            <b>Patent Services IT Assistant</b> <small>PCK Inc., Toronto, Canada</small>
-            <span class="alignright">
-              <a href="http://www.pckip.com/" target="new">
-                <img src="/static/assets/images/pck_logo.png" alt="PCK">
-              </a>
-            </span>
-          </h1>
-          <h4>Sept 2011 - Dec 2011</h4>
-          <hr class="style-three">
-          <div class="row">
-            <div class="col-md-6" style="margin-bottom:75px">
-              <font size="5">Overview</font>
-              <p>I supported and administered the backend database of an IP software system called <a href="http://www.patrix.com/" target="new">Patrix</a>. Responsibilities included managing and creating patent workflows, office actions, batch jobs and document templates. Given the nature of the IP law firm, any changes made to the database needed to be flawless and any mistakes were unforgivable. Other projects I worked on included the migration of local server applications to hosted cloud servers and the testing, architecting and documentation of the migration process.</p>
-              <font size="5">Skills Acquired</font>
-              <ul>
-                <li>Experience in testing and fixing database related bugs </li>
-                <li>Experience in writing SQL commands and scripts</li>
-                <li>Technical writing and presentation skills working with professional lawyers</li>
-                <li>Knowledge of server architecture and server migration process</li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <font size="5">Evaluation: 
-                <a href="coop/eval_pck.pdf" target="new"><b>Excellent</b></a>
-              </font>
-              <blockquote>
-                <p>Jeremy did an exceptional job in learning and administrating a very technical program in a short period of time. He was able to deliver when needed, often in a very detail oriented environment.</p>
-                <small>Daniel Casas, IT Systems Manager, PCK Inc.</small>
-              </blockquote>
-            </div>
-          </div>
+        <div class="col-md-6">
+          <font size="5">Evaluation: 
+            <a href="coop/eval_ims.pdf" target="new"><b>Excellent</b></a>
+          </font>
+          <blockquote>
+            <ul>
+              <li>Highly regarded by all members of the team</li>
+              <li>Asks questions that show he is involved in the work</li>
+              <li>Has done some development and development support</li>
+              <li>Both quality/quantity were great</li>
+            </ul>
+            <p>All in all, very happy with his work.</p>
+            <small>Tim Donkersgoed, Manager, Product Development Quality</small>
+          </blockquote>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <!-- PORTFOLIO -->
-      <section id="portfolio" class="info-body">
-        <div class="jumbotron" id="ironman"> 
-          <div class="container"> 
-            <div class="col-md-12 white-font"> 
-              <h1>PORTFOLIO</h1>
-              <p class="quote">
-                "To invent, you need a good imagination and a pile of junk."
-                <i>- Thomas A. Edison</i>
-              </p>
-            </div> 
-          </div>
+  <section id="zspace" class="info-body">
+    <div class="container">
+      <h1><b>Display Engineer</b> <small>zSpace, Mountain View, CA, USA</small>
+        <span class="alignright">
+          <a href="http://zspace.com/" target="new">
+            <img src="/static/assets/images/zspace_logo.png" alt="zSpace">
+          </a>
+        </span>
+      </h1>
+      <h4>Jan 2013 - Apr 2013</h4>
+      <hr class="style-three">
+      <div class="row">
+        <div class="col-md-6">
+          <font size="5">Overview</font>
+          <p>
+            At zSpace, I learned about modern display architectures and designed an automatic display Q/A measurement system to measure the performance of LCD displays at different viewing-angles. The final project involved two ThorLabs stepper motors and a Konica Minolta Display Color Analayzer. I had full control of the project including the mechancial design, embedded and GUI software development. I later installed and implemented the automated viewing angle measurement system to the production line to help increase the production efficiency.      
+          </p>
+          <font size="5">Skills Acquired</font>
+          <ul>
+            <li>Embedded software development and interfacing with motor controllers and other peripherals</li>
+            <li>Software development in C#, Java and MATLAB</li>
+            <li>Knowledge of LCD architecture, color theory and 3D stereoscopics display technology</li>
+            <li>Training production line workers of using the system automation software</li>
+          </ul>
         </div>
-      </section>
-
-      <section id="projects">
-        <div class="container" style="margin-top: 25px">
-          <div class="col-md-4">
-            <div class="thumbnail" style="height: 340px;">
-              <div class="caption">
-                <h2><b>PepRally</b></h2>
-                <p>
-                  Social app targeted at college sports fans where users can share posts about games, engage with players directly and interact with other fans to increase school spirit = a mobile pep rally! 
-                </p>
-                <p>
-                  Developed in Android Studio and will be launching to the Google Play Store this fall 2016.
-                </p>
-                <h3>
-                  <span class="label label-info">In Progress</span>
-                </h3>
-              </div>
-              <img src="/static/assets/images/peprally.png">
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="thumbnail" style="height:340px;">
-              <div class="caption">
-                <h2><b>2048</b></h2>
-                <p>Popular block puzzle game remade in Python and in Javascript</p>
-                <h3>
-                <span class="label label-success">Completed</span>
-                </h3>
-              </div>
-              <img src="/static/assets/images/2048.png">
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="thumbnail" style="height:340px;">
-              <div class="caption">
-                 <h2><b>Connect 4</b></h2>
-                 <p>
-                  Classic connect 4 game made using an LED matrix as the game board controlled by a Raspbery PI. A Python Flask web app is used as the user interface to allow multiple players to play the game.
-                </p>
-                <h3>
-                  <span class="label label-success">Completed</span>
-                </h3>
-              </div>
-              <img src="/static/assets/images/connect4.png">
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="thumbnail" style="height:340px">
-              <div class="caption">
-                <h2><b>LED Word Clock</b></h2>
-                <p>Digital LED clock displaying time in words.</p>
-                <h3>
-                  <span class="label label-success">Completed</span>
-                  <a class="label label-danger" href="#" data-toggle="modal" data-target=".popup-wordclock">Details</a>
-                </h3>
-              </div>
-              <img src="/static/assets/images/wordclock/wordclock_icon.jpg">
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="thumbnail" style="height:340px;">
-              <div class="caption">
-                 <h2><b>Sonar RGB LED Cube</b></h2>
-                 <p>4x4x4 RGB LED Cube with built-in sonar sensors to allow motion controls.</p>
-                 <h3>
-                  <span class="label label-success">Completed</span>
-                  <a class="label label-danger" href="#" data-toggle="modal" data-target=".popup-sonarcube">Details</a>
-                </h3>
-              </div>
-              <img src="/static/assets/images/sonarcube/sonarcube_icon.jpg">
-            </div>
-          </div>
-
+        <div class="col-md-6">
+          <font size="5">Evaluation: 
+            <a href="coop/eval_zspace.pdf" target="new"><b>Outstanding</b></a>
+          </font>
+          <blockquote>
+            <p>
+              Jeremy exceeded my expectations of how useful he would be to my team. I gave him a hard task as soon as he showed up, which involved getting new HW working, writing new SW to operate it, learning new measurement techniques for displays, and understanding enough of a sizable legacy SW code base to integrate his SW with it. He excelled at all of this.
+            </p>
+            <small>Mark Flynn, Director of Displays, zSpace</small>
+          </blockquote>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
-      <div class="modal fade popup-wordclock" tabindex="-1" role="dialog" aria-labelledby="modal-wordclock" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content gaspar-font">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              <h2 class="modal-title" id="modal-wordclock"><b>LED Word Clock</b></h2>
-              <span class="label label-success" style="font-size: medium">Completion time: 2 week</span>
-            </div>
-            <div class="modal-body">
-              <div class="row">
-                <div class="col-md-6">
-                  <font size="5">Description</font>
-                  <p>
-                    Sleek LED word clock made by driving individual LEDs using ULN2003AN drivers controlled by 74HC595N shift registers. Housed with an IKEA picture frame, the LED holder is constructed out of cardboard. The controller is an Arduino on breadboard made using the ATMEGA328P-PU chip. All circuits are hand soldered on protoboards. Push buttons and LCD mounted to the back are programmed to set the time.
-                  </p>
-                  <font size="5">Materials</font>
-                  <ul>
-                    <li>IKEA RIBBA 9x9" Picture Frame</li>
-                    <li>ATMEGA328P-PU Bootloaded Microcontroller</li>
-                    <li>98 x Diffused White LEDs + 98x500Ohm Resistors</li>
-                    <li>4 x ULN2003AN Drivers</li>
-                    <li>3 x 74HC595N Shift Registers</li>
-                    <li>5V Power Supply or Power Circuit</li>
-                    <li>LCD Display</li>
-                    <li>2 x Push Buttons</li>
-                  </ul>
-                </div>
-                <div class="col-md-6">
-                  <font size="5">Gallery</font>
-                  <div id="carousel-wordclock" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                      <li data-target="#carousel-wordclock" data-slide-to="0" class="active"></li>
-                      <li data-target="#carousel-wordclock" data-slide-to="1"></li>
-                      <li data-target="#carousel-wordclock" data-slide-to="2"></li>
-                      <li data-target="#carousel-wordclock" data-slide-to="3"></li>
-                      <li data-target="#carousel-wordclock" data-slide-to="4"></li>
-                      <li data-target="#carousel-wordclock" data-slide-to="5"></li>
-                      <li data-target="#carousel-wordclock" data-slide-to="6"></li>
-                    </ol>
+  <section id="ignis" class="info-body">
+    <div class="container">
+      <h1>
+        <b>Engineering Intern</b> <small>IGNIS Innovation, Waterloo, ON, Canada</small>
+        <span class="alignright">
+          <a href="http://www.ignisinnovation.com/" target="new">
+            <img src="/static/assets/images/ignis_logo.png" alt="IGNIS">
+          </a>
+        </span>
+      </h1>
+      <h4>May 2012 - Aug 2012</h4>
+      <hr class="style-three">
+      <div class="row">
+        <div class="col-md-6">
+          <font size="5">Overview</font>
+          <p>
+            I was thrown into a very fast paced startup culture at IGNIS and got to work on a variety of software and hardware projects. I learned how to use lab instruments such as scopes, multimeters as well as valuable soldering techniques. I worked on a project that involved hacking a Canon scanner and designing an automated display measurement system using the Windows Image Acquisition (WIA) API in Python. Other projects I worked on includes writing analog board bring-up tests and designing a frontend data parsing software tool in C# and .NET.
+          </p>
+          <font size="5">Skills Acquired</font>
+          <ul>
+            <li>Experience in working in a fast paced startup culture</li>
+            <li>Soldering techniques and hardware debugging using oscilloscopes, spectrum analyzers and digital multimeters</li>
+            <li>Software development in C# and Python</li>
+            <li>Knowledge of AMOLED, LCD and other display technologies</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <font size="5">Evaluation: 
+            <a href="coop/eval_ignis.pdf" target="new"><b>Excellent</b></a>
+          </font>
+          <blockquote>
+            <p>Jeremy is a fast learner who shows personal initiative to learn about op-amps in his work. He works extremely well with others, is humble and eager to understand more about work processes. He adapts quickly when switching between completely unrelated tasks, and fits well into a small company environment. While limited in experience, Jeremy has room for growth in creative problem solving by proposing novel solutions to existing problems and identifying opportunities for showing initiative towards higher-priority tasks. Overall very enthusiastic towards work.</p>
+            <small>J. Marcel Dionne, Director of Engineering, IGNIS Innovation</small>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                      <div class="item active">
-                        <img src="/static/assets/images/wordclock/pic0.jpg">
-                        <div class="carousel-caption">
-                          <h4>Final Product</h4>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <img src="/static/assets/images/wordclock/pic1.jpg">
-                        <div class="carousel-caption">
-                          <h4>Letter mask transparency</h4>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <img src="/static/assets/images/wordclock/pic2.jpg">
-                        <div class="carousel-caption">
-                          <h4>LED setup</h4>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <img src="/static/assets/images/wordclock/pic3.jpg">
-                        <div class="carousel-caption">
-                          <h4>Display driver(right), controller(left)</h4>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <img src="/static/assets/images/wordclock/pic4.jpg">
-                        <div class="carousel-caption">
-                          <h4>Display driver(right), controller(left)</h4>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <img src="/static/assets/images/wordclock/pic5.jpg">
-                        <div class="carousel-caption">
-                          <h4>Software testing</h4>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <img src="/static/assets/images/wordclock/pic6.jpg" style="width:409px;height:409px;display:block;margin-left:auto;margin-right:auto;">
-                        <div class="carousel-caption">
-                          <h4>Final Housing</h4>
-                        </div>
-                      </div>
-                    </div>
+  <section id="pck" class="info-body">
+    <div class="container">
+      <h1>
+        <b>Patent Services IT Assistant</b> <small>PCK, Toronto, ON, Canada</small>
+        <span class="alignright">
+          <a href="http://www.pckip.com/" target="new">
+            <img src="/static/assets/images/pck_logo.png" alt="PCK">
+          </a>
+        </span>
+      </h1>
+      <h4>Sept 2011 - Dec 2011</h4>
+      <hr class="style-three">
+      <div class="row">
+        <div class="col-md-6">
+          <font size="5">Overview</font>
+          <p>I supported and administered the backend database of an IP software system called <a href="http://www.patrix.com/" target="new">Patrix</a>. Responsibilities included managing and creating patent workflows, office actions, batch jobs and document templates. Given the nature of the IP law firm, any changes made to the database needed to be flawless and any mistakes were unforgivable. I also worked the migration of local server applications to hosted cloud servers and the testing and documentation of the migration process.</p>
+          <font size="5">Skills Acquired</font>
+          <ul>
+            <li>Testing and fixing database related bugs </li>
+            <li>Writing SQL commands and scripts</li>
+            <li>Technical writing and presentation skills</li>
+            <li>Knowledge of server architecture and server migration process</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <font size="5">Evaluation: 
+            <a href="coop/eval_pck.pdf" target="new"><b>Excellent</b></a>
+          </font>
+          <blockquote>
+            <p>Jeremy did an exceptional job in learning and administrating a very technical program in a short period of time. He was able to deliver when needed, often in a very detail oriented environment.</p>
+            <small>Daniel Casas, IT Systems Manager, PCK Inc.</small>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-wordclock" data-slide="prev">
-                      <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-wordclock" data-slide="next">
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                    </div>
-                </div>
-              </div>
-            </div>
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="info-body">
+    <div class="jumbotron" id="ironman"> 
+      <div class="container"> 
+        <div class="col-md-12 white-font"> 
+          <h1>PORTFOLIO</h1>
+          <p class="quote">
+            "To invent, you need a good imagination and a pile of junk."
+            <i>- Thomas A. Edison</i>
+          </p>
+        </div> 
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container" style="margin-top: 25px">
+      <div class="col-md-4">
+        <div class="thumbnail" style="height: 340px;">
+          <div class="caption">
+            <h2><b>PepRally</b></h2>
+            <p>
+              Social app targeted at college sports fans where users can share posts about games, engage with players directly and interact with other fans to increase school spirit = a mobile pep rally! 
+            </p>
+            <p>
+              Developed in Android Studio and will be launching to the Google Play Store this fall 2016.
+            </p>
+            <h3>
+              <span class="label label-info">In Progress</span>
+              <a class="label label-warning" href="https://github.com/jerbotron/PepRally_Android.git">Github</a>
+            </h3>
           </div>
+          <img src="/static/assets/images/peprally.png">
         </div>
       </div>
 
-      <div class="modal fade popup-sonarcube" tabindex="-1" role="dialog" aria-labelledby="modal-sonarcube" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content gaspar-font">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              <h2 class="modal-title" id="modal-sonarcube"><b>Sonar RGB LED Cube</b></h2>
-              <span class="label label-success" style="font-size: medium">Completion time: 3 week</span>
+      <div class="col-md-4">
+        <div class="thumbnail" style="height:340px;">
+          <div class="caption">
+            <h2><b>2048</b></h2>
+            <p>Popular block puzzle game remade in Python and in Javascript</p>
+            <h3>
+            <span class="label label-success">Completed</span>
+            <a class="label label-primary" href="2048game" target="new">Demo</a>
+            <a class="label label-warning" href="https://github.com/jerbotron/2048_webapp.git" target="new">Github</a>
+            </h3>
+          </div>
+          <img src="/static/assets/images/2048.png">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail" style="height:340px;">
+          <div class="caption">
+             <h2><b>Connect 4</b></h2>
+             <p>
+              Classic connect 4 game made using an LED matrix as the game board controlled by a Raspbery PI. A Python Flask web app is used as the user interface to allow multiple players to play the game.
+            </p>
+            <h3>
+              <span class="label label-success">Completed</span>
+              <a class="label label-warning" href="">Github</a>
+            </h3>
+          </div>
+          <img src="/static/assets/images/connect4.png">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail" style="height:340px">
+          <div class="caption">
+            <h2><b>LED Word Clock</b></h2>
+            <p>Digital LED clock displaying time in words.</p>
+            <h3>
+              <span class="label label-success">Completed</span>
+              <a class="label label-danger" href="#" data-toggle="modal" data-target=".popup-wordclock">Details</a>
+            </h3>
+          </div>
+          <img src="/static/assets/images/wordclock/wordclock_icon.jpg">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="thumbnail" style="height:340px;">
+          <div class="caption">
+             <h2><b>Sonar RGB LED Cube</b></h2>
+             <p>4x4x4 RGB LED Cube with built-in sonar sensors to allow motion controls.</p>
+             <h3>
+              <span class="label label-success">Completed</span>
+              <a class="label label-danger" href="#" data-toggle="modal" data-target=".popup-sonarcube">Details</a>
+            </h3>
+          </div>
+          <img src="/static/assets/images/sonarcube/sonarcube_icon.jpg">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="modal fade popup-wordclock" tabindex="-1" role="dialog" aria-labelledby="modal-wordclock" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content gaspar-font">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h2 class="modal-title" id="modal-wordclock"><b>LED Word Clock</b></h2>
+          <span class="label label-success" style="font-size: medium">Completion time: 2 week</span>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <font size="5">Description</font>
+              <p>
+                Sleek LED word clock made by driving individual LEDs using ULN2003AN drivers controlled by 74HC595N shift registers. Housed with an IKEA picture frame, the LED holder is constructed out of cardboard. The controller is an Arduino on breadboard made using the ATMEGA328P-PU chip. All circuits are hand soldered on protoboards. Push buttons and LCD mounted to the back are programmed to set the time.
+              </p>
+              <font size="5">Materials</font>
+              <ul>
+                <li>IKEA RIBBA 9x9" Picture Frame</li>
+                <li>ATMEGA328P-PU Bootloaded Microcontroller</li>
+                <li>98 x Diffused White LEDs + 98x500Ohm Resistors</li>
+                <li>4 x ULN2003AN Drivers</li>
+                <li>3 x 74HC595N Shift Registers</li>
+                <li>5V Power Supply or Power Circuit</li>
+                <li>LCD Display</li>
+                <li>2 x Push Buttons</li>
+              </ul>
             </div>
-            <div class="modal-body">
-              <div class="row">
-                <div class="col-md-6">
-                  <font size="5">Description</font>
-                  <p>
-                    The 4x4x4 RGB LED cube operates in 2 modes: <b>animation</b> mode and <b>game</b> mode. 
-                  </p>
-                  <p>
-                    In animation mode, the cube will cycle through pre-programmed animations as seen <a href="">here</a>.
-                  </p>
-                  <p>
-                    Game mode is a reflex-based game where the user will place hand over the sonar sensors to begin. A random LED will turn on somewhere in the cube matrix and another LED will start racing through the cube towards the turned-on LED until the user lifts his/her hand away from the sensors. The objective is to land the running LED on top of the randomly turned-on LED.
-                  </p>
-                  <font size="5">Materials</font>
-                  <ul>
-                    <li>65 x Diffused RGB LEDs</li>
-                    <li>2 x Sonar Sensors</li>
-                    <li>3 x TCL5940 LED Drivers</li>
-                    <li>5 x P-Channel MOSFETS</li>
-                    <li>ATMEGA328P-PU Bootloaded Microcontroller</li>
-                    <li>5V Power Supply or Power Circuit</li>          
-                    <li>3-Pos Toggle Switch</li>
-                    <li>Protoboards, Resistors, Capacitors, Solder</li>
-                  </ul>
-                </div>
-                <div class="col-md-6">
-                  <font size="5">Gallery</font>
-                  <div id="carousel-sonarcube" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                      <li data-target="#carousel-sonarcube" data-slide-to="0" class="active"></li>
-                      <li data-target="#carousel-sonarcube" data-slide-to="1"></li>
-                      <li data-target="#carousel-sonarcube" data-slide-to="2"></li>
-                      <li data-target="#carousel-sonarcube" data-slide-to="3"></li>
-                      <li data-target="#carousel-sonarcube" data-slide-to="4"></li>
-                      <li data-target="#carousel-sonarcube" data-slide-to="5"></li>
-                      <li data-target="#carousel-sonarcube" data-slide-to="6"></li>
-                    </ol>
+            <div class="col-md-6">
+              <font size="5">Gallery</font>
+              <div id="carousel-wordclock" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-wordclock" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-wordclock" data-slide-to="1"></li>
+                  <li data-target="#carousel-wordclock" data-slide-to="2"></li>
+                  <li data-target="#carousel-wordclock" data-slide-to="3"></li>
+                  <li data-target="#carousel-wordclock" data-slide-to="4"></li>
+                  <li data-target="#carousel-wordclock" data-slide-to="5"></li>
+                  <li data-target="#carousel-wordclock" data-slide-to="6"></li>
+                </ol>
 
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                      <div class="item active">
-                        <img src="/static/assets/images/sonarcube/pic0.png">
-                        <div class="carousel-caption">
-                          <h4>Final Product</h4>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <img src="/static/assets/images/sonarcube/pic1.png">
-                        <div class="carousel-caption">
-                          <h4>LED cube layer by layer construction</h4>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <img src="/static/assets/images/sonarcube/pic2.png">
-                        <div class="carousel-caption">
-                          <h4>Finished LED Cube</h4>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <img src="/static/assets/images/sonarcube/pic3.png">
-                        <div class="carousel-caption">
-                          <h4>Connecting RGB pins to headers</h4>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <img src="/static/assets/images/sonarcube/pic4.png">
-                        <div class="carousel-caption">
-                          <h4>Final control board</h4>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <img src="/static/assets/images/sonarcube/pic5.png">
-                        <div class="carousel-caption">
-                          <h4>Handcut and painted wooden frame housing</h4>
-                        </div>
-                      </div>
-                      <div class="item">
-                        <img src="/static/assets/images/sonarcube/pic6.png">
-                        <div class="carousel-caption">
-                          <h4>Putting final pieces together</h4>
-                        </div>
-                      </div>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="/static/assets/images/wordclock/pic0.jpg">
+                    <div class="carousel-caption">
+                      <h4>Final Product</h4>
                     </div>
-
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-sonarcube" data-slide="prev">
-                      <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#carousel-sonarcube" data-slide="next">
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
+                  </div>
+                  <div class="item">
+                    <img src="/static/assets/images/wordclock/pic1.jpg">
+                    <div class="carousel-caption">
+                      <h4>Letter mask transparency</h4>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="/static/assets/images/wordclock/pic2.jpg">
+                    <div class="carousel-caption">
+                      <h4>LED setup</h4>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="/static/assets/images/wordclock/pic3.jpg">
+                    <div class="carousel-caption">
+                      <h4>Display driver(right), controller(left)</h4>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="/static/assets/images/wordclock/pic4.jpg">
+                    <div class="carousel-caption">
+                      <h4>Display driver(right), controller(left)</h4>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="/static/assets/images/wordclock/pic5.jpg">
+                    <div class="carousel-caption">
+                      <h4>Software testing</h4>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="/static/assets/images/wordclock/pic6.jpg" style="width:409px;height:409px;display:block;margin-left:auto;margin-right:auto;">
+                    <div class="carousel-caption">
+                      <h4>Final Housing</h4>
+                    </div>
                   </div>
                 </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-wordclock" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-wordclock" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade popup-sonarcube" tabindex="-1" role="dialog" aria-labelledby="modal-sonarcube" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content gaspar-font">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h2 class="modal-title" id="modal-sonarcube"><b>Sonar RGB LED Cube</b></h2>
+          <span class="label label-success" style="font-size: medium">Completion time: 3 week</span>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <font size="5">Description</font>
+              <p>
+                The 4x4x4 RGB LED cube operates in 2 modes: <b>animation</b> mode and <b>game</b> mode. 
+              </p>
+              <p>
+                In animation mode, the cube will cycle through pre-programmed animations as seen <a href="">here</a>.
+              </p>
+              <p>
+                Game mode is a reflex-based game where the user will place hand over the sonar sensors to begin. A random LED will turn on somewhere in the cube matrix and another LED will start racing through the cube towards the turned-on LED until the user lifts his/her hand away from the sensors. The objective is to land the running LED on top of the randomly turned-on LED.
+              </p>
+              <font size="5">Materials</font>
+              <ul>
+                <li>65 x Diffused RGB LEDs</li>
+                <li>2 x Sonar Sensors</li>
+                <li>3 x TCL5940 LED Drivers</li>
+                <li>5 x P-Channel MOSFETS</li>
+                <li>ATMEGA328P-PU Bootloaded Microcontroller</li>
+                <li>5V Power Supply or Power Circuit</li>          
+                <li>3-Pos Toggle Switch</li>
+                <li>Protoboards, Resistors, Capacitors, Solder</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <font size="5">Gallery</font>
+              <div id="carousel-sonarcube" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-sonarcube" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-sonarcube" data-slide-to="1"></li>
+                  <li data-target="#carousel-sonarcube" data-slide-to="2"></li>
+                  <li data-target="#carousel-sonarcube" data-slide-to="3"></li>
+                  <li data-target="#carousel-sonarcube" data-slide-to="4"></li>
+                  <li data-target="#carousel-sonarcube" data-slide-to="5"></li>
+                  <li data-target="#carousel-sonarcube" data-slide-to="6"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="/static/assets/images/sonarcube/pic0.png">
+                    <div class="carousel-caption">
+                      <h4>Final Product</h4>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="/static/assets/images/sonarcube/pic1.png">
+                    <div class="carousel-caption">
+                      <h4>LED cube layer by layer construction</h4>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="/static/assets/images/sonarcube/pic2.png">
+                    <div class="carousel-caption">
+                      <h4>Finished LED Cube</h4>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="/static/assets/images/sonarcube/pic3.png">
+                    <div class="carousel-caption">
+                      <h4>Connecting RGB pins to headers</h4>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="/static/assets/images/sonarcube/pic4.png">
+                    <div class="carousel-caption">
+                      <h4>Final control board</h4>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="/static/assets/images/sonarcube/pic5.png">
+                    <div class="carousel-caption">
+                      <h4>Handcut and painted wooden frame housing</h4>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="/static/assets/images/sonarcube/pic6.png">
+                    <div class="carousel-caption">
+                      <h4>Putting final pieces together</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-sonarcube" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-sonarcube" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
-      <!-- CONTACT SECTION -->
-      <section id="contact" class="info-body">
-        <div class="black-background">
-          <div class="container">
-            <div class="contact">
-             <h1><center>Contact Me</center></h1>
-             <hr class="style-one">
-             <div class="col-lg-6 col-lg-offset-3">
-               <h3 style="color:#FF6633;"><?php echo $_GET[msg];?></h3>
-             </div>
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="info-body">
+    <div class="black-background">
+      <div class="container">
+        <div class="contact">
+         <h1><center>Contact Me</center></h1>
+         <hr class="style-one">
+         <div class="col-lg-6 col-lg-offset-3">
+           <h3 style="color:#FF6633;"><?php echo $_GET[msg];?></h3>
+         </div>
 
-             <div class="row">
-              <div class="col-lg-6 col-lg-offset-3">
-                <form name="enq" method="post" action="email/" onsubmit="return validation();">
-                  <fieldset>
-                    <div class="row control-group">
-                      <div class="form-group col-xs-12 floating-label-form-group controls">
-                        <p>Name</p>
-                        <input type="text" name="name" id="name" value="" class="form-control" placeholder="Name" required data-validation-required-message="Please enter your name."/>
-                        <p class="help-block text-danger"></p>
-                      </div>
-                    </div>
-                    <div class="row control-group">
-                      <div class="form-group col-xs-12 floating-label-form-group controls">
-                        <p>Email Address</p>
-                        <input type="text" name="email" id="email" value="" class="form-control" placeholder="Email" required data-validation-required-message="Please enter your email address."/>
-                        <p class="help-block text-danger"></p>
-                      </div>
-                    </div>
-                    <div class="row control-group">
-                      <div class="form-group col-xs-12 floating-label-form-group controls">
-                        <p>Message</p>
-                        <textarea rows="5" name="message" id="message" class="form-control" placeholder="Message" required data-validation-required-message="Please enter a message."></textarea>
-                        <p class="help-block text-danger"></p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="form-group col-xs-12">
-                        <div class="actions">
-                          <input type="submit" value="Submit Message" name="submit" id="submitButton" class="btn btn-primary btn-lg" title="Click here to submit your message!" />
-                        </div>
-                      </div>
-                    </div>
-                  </fieldset>
-                </form>
-              </div>
-            </div>
-
-            <hr class="style-one">
-
-            <div class="row">
-              <ul class="list-inline text-center">
-                <li><a target="new" href="https://www.facebook.com/jeremy.wang.3990" class="btn btn-lg btn-primary"><i class="fa fa-facebook"></i></a></li>
-                <li><a target="new" href="https://twitter.com/thejerbotron" class="btn btn-lg btn-primary"><i class="fa fa-twitter"></i></a></li>
-                <li><a target="new" href="https://ca.linkedin.com/pub/jeremy-wang/38/b95/153" class="btn btn-lg btn-primary"><i class="fa fa-linkedin"></i></a></li>
-                <li><a target="new" href="http://instagram.com/jereremy22" class="btn btn-lg btn-primary"><i class="fa fa-instagram"></i></a></li>
-              </ul>
-              <div class="col-md-4">
-                <div class="footer" align="left">
-                  <i class="fa fa-edit"></i> Designed by Jeremy Wang using Twitter Bootstrap
+         <div class="row">
+          <div class="col-lg-6 col-lg-offset-3">
+            <form name="enq" method="post" action="email/" onsubmit="return validation();">
+              <fieldset>
+                <div class="row control-group">
+                  <div class="form-group col-xs-12 floating-label-form-group controls">
+                    <p>Name</p>
+                    <input type="text" name="name" id="name" value="" class="form-control" placeholder="Name" required data-validation-required-message="Please enter your name."/>
+                    <p class="help-block text-danger"></p>
+                  </div>
                 </div>
-              </div>
-              <div align="right">
-                <a href="#page-top" class="btn btn-sm btn-primary page-scroll"><i class="fa fa-hand-o-up"></i> Back to top</a>
-              </div>
-            </div>
+                <div class="row control-group">
+                  <div class="form-group col-xs-12 floating-label-form-group controls">
+                    <p>Email Address</p>
+                    <input type="text" name="email" id="email" value="" class="form-control" placeholder="Email" required data-validation-required-message="Please enter your email address."/>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="row control-group">
+                  <div class="form-group col-xs-12 floating-label-form-group controls">
+                    <p>Message</p>
+                    <textarea rows="5" name="message" id="message" class="form-control" placeholder="Message" required data-validation-required-message="Please enter a message."></textarea>
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-group col-xs-12">
+                    <div class="actions">
+                      <input type="submit" value="Submit Message" name="submit" id="submitButton" class="btn btn-primary btn-lg" title="Click here to submit your message" />
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
           </div>
         </div>
-      </section>
 
-      <!-- Javascript
-      ================================================== -->
-      <!-- Core JS-->
-      <script src="/static/assets/js/jquery.js"></script>
-      <script src="/static/assets/js/bootstrap.js"></script>
-      <!-- <script src="/static/assets/js/bootstrap.min.js"></script> -->
+        <hr class="style-one">
 
-      <!-- Tooltip Popover JS -->
-      <script src="/static/assets/js/bootstrap-tooltip.js"></script>
-      <script src="/static/assets/js/bootstrap-popover.js"></script>
-      
-      <!-- Scrolling JS -->
-      <script src="/static/assets/js/jquery.easing.min.js"></script>
-      <script src="/static/assets/js/scrolling-nav.js"></script>
+        <div class="row">
+          <ul class="list-inline text-center">
+            <li><a target="new" href="https://www.facebook.com/jeremy.wang.3990" class="btn btn-lg btn-primary"><i class="fa fa-facebook"></i></a></li>
+            <li><a target="new" href="https://github.com/jerbotron" class="btn btn-lg btn-primary"><i class="fa fa-github"></i></a></li>
+            <li><a target="new" href="https://ca.linkedin.com/pub/jeremy-wang/38/b95/153" class="btn btn-lg btn-primary"><i class="fa fa-linkedin"></i></a></li>
+            <li><a target="new" href="http://instagram.com/jereremy22" class="btn btn-lg btn-primary"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+          <div class="col-md-4">
+            <div class="footer white-font" align="left">
+              <i class="fa fa-edit"></i> Designed by Jeremy Wang using Twitter Bootstrap
+            </div>
+          </div>
+          <div align="right">
+            <a href="#page-top" class="btn btn-sm btn-primary page-scroll"><i class="fa fa-hand-o-up"></i> Back to top</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <!-- Dropdown JS -->
-      <script src="/static/assets/js/bootstrap-dropdown.js"></script>
-      <script src="/static/assets/js/bootstrap-hover-dropdown.js"></script>
-      <script src="/static/assets/js/bootstrap-hover-dropdown.min.js"></script>
+  <!-- Javascript
+  ================================================== -->
+  <!-- Core JS-->
+  <script src="/static/assets/js/jquery.js"></script>
+  <script src="/static/assets/js/bootstrap.js"></script>
+  <!-- <script src="/static/assets/js/bootstrap.min.js"></script> -->
 
-      <script>
-      $("[rel='tooltip']").tooltip();    
+  <!-- Tooltip Popover JS -->
+  <script src="/static/assets/js/bootstrap-tooltip.js"></script>
+  <script src="/static/assets/js/bootstrap-popover.js"></script>
+  
+  <!-- Scrolling JS -->
+  <script src="/static/assets/js/jquery.easing.min.js"></script>
+  <script src="/static/assets/js/scrolling-nav.js"></script>
 
-      $('.thumbnail').hover(
-        function(){
-            $(this).find('.caption').slideDown(250); //.fadeIn(250)
-          },
-          function(){
-            $(this).find('.caption').slideUp(250); //.fadeOut(205)
-          }
-          ); 
+  <!-- Dropdown JS -->
+  <script src="/static/assets/js/bootstrap-dropdown.js"></script>
+  <script src="/static/assets/js/bootstrap-hover-dropdown.js"></script>
+  <script src="/static/assets/js/bootstrap-hover-dropdown.min.js"></script>
 
-      $('.subnav').affix({
-        offset: {
-          top: $('#navtop').height()
-        }
-      }); 
+  <script>
+  $("[rel='tooltip']").tooltip();    
 
-      </script>
+  $('.thumbnail').hover(
+    function(){
+        $(this).find('.caption').slideDown(250); //.fadeIn(250)
+      },
+      function(){
+        $(this).find('.caption').slideUp(250); //.fadeOut(205)
+      }
+      ); 
 
-      <!-- Email JS -->
-      <script src="/static/assets/js/validation.js"></script>
-    </body>
-    </html>
+  $('.subnav').affix({
+    offset: {
+      top: $('#navtop').height()
+    }
+  }); 
+
+  </script>
+
+  <!-- Email JS -->
+  <script src="/static/assets/js/validation.js"></script>
+</body>
+</html>

@@ -19,6 +19,10 @@ def experience():
 def portfolio():
     return render_template('portfolio.html');
 
+@app.route('/2048game')
+def game2048():
+    return render_template('2048game.html');
+
 @app.route('/test')
 def test():
     return render_template('test.html');

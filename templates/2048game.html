@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>2048</title>
+		<script type="text/javascript" src="/static/assets/js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="/static/assets/js/2048game.js"></script>
+		<link type="text/css" rel="stylesheet" href="/static/assets/css/2048.css" />
+	</head>
+	<body>
+	<div class="container">
+		<div>
+			<h1 id="test">2048</h1>
+			<div class="score-container">
+				Number of moves: <span class="moves-counter">0</span>
+			</div>
+			<div class="description">Join the numbers and get to the 2048 tile!</div>
+			<button id="undoButton">Undo</button>
+			<button id="startButton">New Game</button>
+			<br/>
+			<p style="font-size: small">
+				<i>known bug if user spams arrow keys too quicky (asyncronous jquery animation bug) </i>
+			</p>
+		</div>
+	    <div class="board">
+            <div class="tile left-border top-border"><div class="inner-tile"></div></div>
+            <div class="tile left-border top-border"><div class="inner-tile"></div></div>
+            <div class="tile left-border top-border"><div class="inner-tile"></div></div>
+            <div class="tile top-border"><div class="inner-tile"></div></div>
+            <div class="tile left-border top-border"><div class="inner-tile"></div></div>
+            <div class="tile left-border top-border"><div class="inner-tile"></div></div>
+            <div class="tile left-border top-border"><div class="inner-tile moving"></div></div>
+            <div class="tile top-border"><div class="inner-tile moving"></div></div>
+            <div class="tile left-border top-border"><div class="inner-tile"></div></div>
+            <div class="tile left-border top-border"><div class="inner-tile"></div></div>
+            <div class="tile left-border top-border"><div class="inner-tile"></div></div>
+            <div class="tile top-border"><div class="inner-tile"></div></div>
+            <div class="tile left-border"><div class="inner-tile"></div></div>
+            <div class="tile left-border"><div class="inner-tile"></div></div>
+            <div class="tile left-border"><div class="inner-tile"></div></div>
+            <div class="tile"><div class="inner-tile"></div></div>
+	    </div>
+	</div>	
+	</body>
+</html>
