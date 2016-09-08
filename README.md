@@ -1,4 +1,4 @@
-# jw_personal_site
+# Personal Website
 
 This repo contains the source files for my personal site at: http://jerwng.com
 
