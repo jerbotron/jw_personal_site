@@ -1,0 +1,76 @@
+.img-bio {
+	margin-top: 50px;
+}
+
+.bio-heading {
+	text-transform: none;
+}
+
+.img-portfolio {
+	width: 360px;
+	height: 330px;
+}
+
+#carousel-peprally {
+	width: 400px; 
+	margin: 0 auto;
+}
+
+li.skills {
+	font-family: 'Ubuntu', monospace;
+	display: inline-block;
+	font-weight: normal; 
+	margin: 10px 0px 5px 5px;
+}
+ul.skills {
+	list-style: none;
+	padding: 0px;
+}
+tbody.skills {
+	font-family: 'Ubuntu', monospace;
+}
+
+span.label {
+	font-weight: normal; 
+}
+
+.label {
+	font-size: medium
+}
+
+section h3.section-subheading.bio-quote {
+	margin-bottom: 40px;
+}
+
+.ubuntu {
+	font-family: 'Ubuntu', monospace;
+}
+
+.portfolio-modal .modal-content .descrip-2048 {
+	margin-bottom: 10px;
+}
+
+/*.popover {
+	max-width: 100%;
+    border-top: 3px solid #000000;
+    border-left: 3px solid #000000;
+    border-right: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+}
+.popover.right>.arrow:after {
+    left: 4px;
+    bottom: -10px;
+}
+.popover.right>.arrow {
+    left: -14px;
+    margin-top: -14px;
+    border-right-color: #000;
+}
+.popover>.arrow {
+    border-width: 14px;
+}*/
+
+.popover-content {
+	color: black;
+	font-family: 'Ubuntu', monospace;
+}

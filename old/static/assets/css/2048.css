@@ -1,0 +1,75 @@
+/* container defines margins and width */
+.container {
+	max-width: 430px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: "Arial", Arial, sans-serif;
+	font-size: 64px;
+	margin: 5%;
+	display: inline-block;
+	color: #776E65;
+}
+
+.description {
+	display: inline-block;
+}
+
+button {
+	float: right;
+}
+
+.score-container {
+	margin-top: 10%;
+	margin-right: 20%;
+	float: right;
+}
+
+.board {
+	margin-top: 10%;
+	border: 10px solid #BBADA0;
+	border-radius: 10px;
+    width: 100%;
+    height: 430px;
+    background-color: #CDC1B4;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    float: left;
+    color: #776E65;
+}
+
+.inner-tile {
+	width: inherit;
+	height: inherit;
+	border: 0px;
+	font-family: Impact, sans-serif;
+    font-size: 48px;
+	text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    position: relative;
+}
+
+.left-border {
+	border-right: 10px solid #BBADA0;
+}
+
+.right-border {
+	border-left: 10px solid #BBADA0;
+}
+
+.top-border {
+	border-bottom: 10px solid #BBADA0;
+}
+
+.bottom-border {
+	border-top: 10px solid #BBADA0;
+}
+
+.moving {
+	z-index: +1;
+}

@@ -1,0 +1,30 @@
+{
+  "name": "jerwng_website",
+  "title": "Jeremy Wang",
+  "version": "1.0.0",
+  "description": "Personal website for Jeremy Wang",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jerbotron/personal_website.git"
+  },
+  "author": "Jeremy Wang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jerbotron/personal_website/issues"
+  },
+  "homepage": "https://github.com/jerbotron/personal_website#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "browser-sync": "^2.13.0",
+    "font-awesome": "^4.6.3",
+    "jquery": "^1.11.3"
+  },
+}
