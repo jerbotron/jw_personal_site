@@ -29,5 +29,38 @@
             top: 100
         }
     })
-
 })(jQuery); // End of use strict
+
+// Popover
+$(function () { 
+    $("[data-toggle='popover']").popover({
+        container: 'body'
+    }); 
+}); 
+
+// Header animations
+$(function () { 
+    $(".typed").typed({
+        strings: ["hi, i'm jeremy", "i make android apps", "i like startups", "nice to meet you :)"],
+        typeSpeed: 25,
+        startDelay: 50,
+        showCursor: true,
+        callback: function() {
+            setTimeout(function(){
+                $(".typed-cursor").remove();
+                lift();
+            }, 1000);
+        }
+    }); 
+
+    function lift() {
+        $(".intro-lead-in").removeClass("noshow");
+        $(".intro-heading").animate({'opacity': 0}, 250, function () {
+            setTimeout(function() {
+                $(".intro-heading").text(">/ hi, i'm jeremy");
+                $(".intro-heading").animate({'opacity': 1}, 250);
+                $(".head-animate").addClass("lift-text");
+            }, 500)
+        });
+    }
+}); 
