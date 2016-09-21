@@ -14,7 +14,7 @@ $(function() {
             var phone = $("input#phone").val();
             var message = $("textarea#message").val();
 
-            $.get("http://localhost:8080/send", {name:name, email:email, phone:phone, message:message},function(data){
+            $.get("http://jerwng.com/send", {name:name, email:email, phone:phone, message:message},function(data){
                 if(data == "sent")
                 {
                     // Success message
