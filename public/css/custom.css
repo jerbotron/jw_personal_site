@@ -61,11 +61,28 @@ section h3.section-subheading.bio-quote {
 }
 
 .img-bio {
-	margin-top: 50px;
+	/*margin-top: 50px;*/
+	display: inline-block;
 }
 
 .bio-heading {
 	text-transform: none;
+}
+
+#biodetails {
+	text-align: center;
+	margin-top: 25px; }
+#aboutme {
+	text-align: center;
+	margin-top: 25px; }
+
+@media (min-width: 768px) {
+	#biodetails {
+		text-align: left;
+		margin-top: 0px; }
+	#aboutme {
+		text-align: left;
+		margin-top: 75px; }
 }
 
 /* Skills section css */
