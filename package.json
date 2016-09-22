@@ -20,7 +20,8 @@
   "homepage": "https://github.com/jerbotron/personal_website#readme",
   "dependencies": {
     "express": "^4.14.0",
-    "nodemailer": "^2.6.0"
+    "nodemailer": "^2.6.0",
+    "nodemailer-smtp-transport": "^2.7.2"
   },
   "devDependencies": {
     "bootstrap": "^3.3.7",

@@ -29,21 +29,19 @@
             top: 100
         }
     })
-})(jQuery); // End of use strict
 
-// Popover
-$(function () { 
+    // Popover
     $("[data-toggle='popover']").popover({
         container: 'body'
     }); 
-}); 
+})(jQuery); // End of use strict
 
 // Header animations
-$(function () { 
+$(document).ready(function() {
     $(".typed").typed({
         strings: ["hi, i'm jeremy", "i make android apps", "i like startups", "nice to meet you :)"],
         typeSpeed: 25,
-        startDelay: 50,
+        startDelay: 25,
         showCursor: true,
         callback: function() {
             setTimeout(function(){
@@ -63,4 +61,4 @@ $(function () {
             }, 500)
         });
     }
-}); 
+});
