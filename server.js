@@ -24,7 +24,7 @@ app.get('/send',function(req,res){
     var mailOptions={
     	from: '"' + req.query.name + '" <' + req.query.email + '>',
         to: 'wyjeremy@gmail.com',
-        subject: "Contact Me Inquiry",
+        subject: "jerwng.com Inquiry",
         text: message
     }
     console.log(mailOptions);
