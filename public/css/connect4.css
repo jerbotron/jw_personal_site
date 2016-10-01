@@ -1,0 +1,55 @@
+.board {
+    margin: 50px 0 50px 0;
+}
+
+ul.board-col {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+}
+
+/* square tiles */
+li.tile {
+    height: 50px;
+    width: 50px;
+    background-color: #2980b9;
+    text-align: center;
+}
+
+/* circular piece */
+span.piece {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 5px;
+    padding: 0px;
+    display: inline-block;
+}
+
+span.player-red {
+    background-color: #e74c3c;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    display: inline-block; 
+}
+span.player-yellow {
+    background-color: #f1c40f;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    display: inline-block; 
+}
+
+.piece-empty {
+    background-color: white;
+}
+.piece-red {
+    background-color: #e74c3c;
+}
+.piece-yellow {
+    background-color: #f1c40f;
+}
+
+

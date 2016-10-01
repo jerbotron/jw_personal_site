@@ -21,7 +21,8 @@
   "dependencies": {
     "express": "^4.14.0",
     "nodemailer": "^2.6.0",
-    "nodemailer-smtp-transport": "^2.7.2"
+    "nodemailer-smtp-transport": "^2.7.2",
+    "pubnub": "^3.16.3"
   },
   "devDependencies": {
     "bootstrap": "^3.3.7",
