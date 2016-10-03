@@ -20,8 +20,8 @@ var transport = nodemailer.createTransport(smtpTransport({
     secureConnection: false, // use SSL
     port: 587, // port for secure SMTP
     auth: {
-        user: 'jer.wang25@gmail.com',
-        pass: 'peprallytestuser'
+        user: '***',
+        pass: '***'
     }   
 }));
 
@@ -56,8 +56,8 @@ server.listen(8080, function(){
 
 // Initialize PubNub
 var pubnub = PUBNUB.init({
-    publish_key    : 'pub-c-4eb11ea9-5b88-48c9-b43a-9e85200f6197',
-    subscribe_key  : 'sub-c-eac89748-8135-11e6-974e-0619f8945a4f',
+    publish_key    : '***',
+    subscribe_key  : '***',
     uuid: 'SERVER',
     error: function (error) {
         console.log('PubNub Error:', error);
