@@ -702,7 +702,7 @@ ul.social-buttons li a:active {
   margin-top: 0;
 }
 .portfolio-modal .modal-content img {
-  margin-bottom: 0px;
+  margin: 0 auto;
 }
 .portfolio-modal .close-modal {
   position: absolute;
