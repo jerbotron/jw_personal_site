@@ -69,6 +69,10 @@ section h3.section-subheading.bio-quote {
 	text-transform: none;
 }
 
+.header-spacing {
+	margin-top: 150px;
+}
+
 #biodetails {
 	text-align: center;
 	margin-top: 25px; }
